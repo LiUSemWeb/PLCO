@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/PLCO/ontology/observation", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/time", "http://w3id.org/PLCO/ontology/resourceODP", "http://www.w3.org/2006/time" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/PLCO/ontology/observation", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/product", "http://w3id.org/PLCO/ontology/time", "http://www.w3.org/2006/time" ],
     "title" : {
       "undefined" : "PLCO Ontology Network - Observation Module"
     },
@@ -37,16 +37,16 @@
         "value" : "plco-observation",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/PLCO/ontology/observation",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -65,49 +65,71 @@
   },
   "namespace" : [ ],
   "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
-    "type" : "owl:Thing"
+    "id" : "8",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Literal"
+    "id" : "12",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "15",
-    "type" : "rdfs:Literal"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "4",
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "7",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "19",
+    "id" : "24",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
     "type" : "owl:intersectionOf"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#Observation",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
     "instances" : 0,
@@ -117,45 +139,43 @@
     },
     "id" : "2"
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "6",
+    "id" : "16",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#StateProperty",
-    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "StateProperty"
-    },
-    "attributes" : [ "external" ],
-    "id" : "10"
-  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "11",
+    "id" : "17",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "15",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "16",
+    "id" : "18",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -168,21 +188,30 @@
       "IRI-based" : "ObservationValue",
       "undefined" : "Observation Value"
     },
-    "id" : "4"
+    "id" : "6"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
+    "id" : "7",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "id" : "24",
     "label" : {
       "IRI-based" : "string"
     }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#StateProperty",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#ObservationCollection",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
@@ -200,7 +229,7 @@
       "IRI-based" : "ObservationParameter",
       "undefined" : "Observation Parameter"
     },
-    "id" : "13"
+    "id" : "14"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#FeatureOfInterest",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
@@ -209,7 +238,27 @@
       "IRI-based" : "FeatureOfInterest",
       "undefined" : "Feature Of Interest"
     },
-    "id" : "23"
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "subClasses" : [ "3", "22" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#ObservableProperty",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
@@ -218,48 +267,57 @@
       "IRI-based" : "ObservableProperty",
       "undefined" : "Observable Property"
     },
-    "intersection" : [ "10" ],
+    "intersection" : [ "25" ],
     "attributes" : [ "intersection" ],
-    "id" : "8"
+    "id" : "10"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "7",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "12",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "17",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "18",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "20",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "21",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "22",
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
+    "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -276,133 +334,153 @@
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasNumericValue",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "IRI-based" : "hasNumericValue",
       "undefined" : "has numeric value"
     },
-    "domain" : "4",
+    "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "3"
+    "id" : "5"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#isObservedBy",
-    "inverse" : "9",
+    "inverse" : "11",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
     "range" : "2",
     "label" : {
       "IRI-based" : "isObservedBy",
       "undefined" : "is observed by"
     },
-    "domain" : "8",
+    "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "7"
+    "id" : "9"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasObservationParameter",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "13",
+    "range" : "14",
     "label" : {
       "IRI-based" : "hasObservationParameter",
       "undefined" : "has observation parameter"
     },
     "domain" : "2",
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "13"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/time#hasTimeStamp",
     "baseIri" : "http://w3id.org/PLCO/ontology/time",
-    "range" : "11",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasTimeStamp"
     },
-    "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "17"
+    "domain" : "16",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "14",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasXSDDuration"
     },
-    "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "18"
+    "domain" : "3",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesDuring",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "15",
+    "range" : "17",
     "label" : {
       "IRI-based" : "observesDuring",
       "undefined" : "observes during"
     },
     "domain" : "2",
     "attributes" : [ "datatype" ],
-    "id" : "20"
+    "id" : "26"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "4",
+    "range" : "6",
     "label" : {
       "IRI-based" : "hasValueForObservationParameter",
       "undefined" : "has value for observation parameter"
     },
-    "domain" : "13",
+    "domain" : "14",
     "attributes" : [ "object" ],
-    "id" : "21"
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "inXSDDateTimeStamp"
+    },
+    "domain" : "22",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "28"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesOnProperty",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "8",
+    "range" : "10",
     "label" : {
       "IRI-based" : "observesOnProperty",
       "undefined" : "observes on property"
     },
     "domain" : "2",
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "11"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "23",
+    "range" : "30",
     "label" : {
       "IRI-based" : "observesOnFeatureOfInterest",
       "undefined" : "observes on feature of interest"
     },
     "domain" : "2",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "29"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasTextualValue",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "19",
+    "range" : "24",
     "label" : {
       "IRI-based" : "hasTextualValue",
       "undefined" : "has textual value"
     },
-    "domain" : "4",
+    "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "24"
+    "id" : "31"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasObservationValue",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "4",
+    "range" : "6",
     "label" : {
       "IRI-based" : "hasObservationValue",
       "undefined" : "has observation value"
     },
     "domain" : "2",
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "32"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesAt",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "16",
+    "range" : "18",
     "label" : {
       "IRI-based" : "observesAt",
       "undefined" : "observes at"
     },
     "domain" : "2",
     "attributes" : [ "datatype" ],
-    "id" : "26"
+    "id" : "33"
   } ]
 }

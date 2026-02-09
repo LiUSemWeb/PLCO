@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://w3id.org/PLCO/ontology/observation">
@@ -252,20 +253,6 @@
     
 
 
-    <!-- http://w3id.org/PLCO/ontology/time#hasTimeStamp -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/time#hasTimeStamp"/>
-    
-
-
-    <!-- http://www.w3.org/2006/time#hasXSDDuration -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasXSDDuration"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -332,10 +319,10 @@
     
 
 
-    <!-- http://w3id.org/PLCO/ontology/resourceODP#StateProperty -->
+    <!-- http://w3id.org/PLCO/ontology/product#StateProperty -->
 
 
-    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#StateProperty"/>
+    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/product#StateProperty"/>
     
 
 
@@ -350,7 +337,7 @@
 
     <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://w3id.org/PLCO/ontology/resourceODP#StateProperty"/>
+            <rdf:Description rdf:about="http://w3id.org/PLCO/ontology/product#StateProperty"/>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/PLCO/ontology/observation#isObservedBy"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/PLCO/ontology/observation#Observation"/>

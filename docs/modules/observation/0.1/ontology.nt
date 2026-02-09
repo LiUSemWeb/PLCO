@@ -125,20 +125,14 @@
 # http://w3id.org/PLCO/ontology/observation#observesAt
 <http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/PLCO/ontology/time#hasTimeStamp> .
-<http://w3id.org/PLCO/ontology/time#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
 <http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#label> "observes at" .
 # 
 # http://w3id.org/PLCO/ontology/observation#observesDuring
 <http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasXSDDuration> .
-<http://www.w3.org/2006/time#hasXSDDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
 <http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#label> "observes during" .
-# 
-# http://w3id.org/PLCO/ontology/time#hasTimeStamp
-# 
-# http://www.w3.org/2006/time#hasXSDDuration
 # 
 # 
 # 
@@ -173,8 +167,8 @@
 <http://w3id.org/PLCO/ontology/observation#ObservationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/PLCO/ontology/observation#ObservationValue> <http://www.w3.org/2000/01/rdf-schema#label> "Observation Value" .
 # 
-# http://w3id.org/PLCO/ontology/resourceODP#StateProperty
-<http://w3id.org/PLCO/ontology/resourceODP#StateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://w3id.org/PLCO/ontology/product#StateProperty
+<http://w3id.org/PLCO/ontology/product#StateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -199,7 +193,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/on
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/observation#isObservedBy> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/resourceODP#StateProperty> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/product#StateProperty> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/observation#ObservableProperty> .

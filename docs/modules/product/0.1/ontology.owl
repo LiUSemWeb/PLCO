@@ -378,34 +378,6 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty"/>
         <rdfs:label>State Property</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://w3id.org/PLCO/ontology/resourceODP#DigitalObject -->
-
-
-    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#DigitalObject"/>
-    
-
-
-    <!-- http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject -->
-
-
-    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject"/>
-    
-
-
-    <!-- http://w3id.org/PLCO/ontology/resourceODP#Resource -->
-
-
-    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#Resource"/>
-    
-
-
-    <!-- http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty -->
-
-
-    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty"/>
 </rdf:RDF>
 
 

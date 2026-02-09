@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://w3id.org/PLCO/ontology/location", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/PLCO/ontology/product", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/resourceODP" ],
+    "baseIris" : [ "http://w3id.org/PLCO/ontology/location", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/PLCO/ontology/product", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/resourceODP", "http://www.opengis.net/ont/geosparql" ],
     "title" : {
       "undefined" : "PLCO Ontology Network - Product Module"
     },
@@ -37,16 +37,16 @@
         "value" : "plco-product",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/PLCO/ontology/product",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -65,162 +65,135 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "11",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "15",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "5",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
     "id" : "13",
-    "type" : "owl:unionOf"
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
   }, {
     "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "19",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#Resource",
-    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Resource"
-    },
-    "subClasses" : [ "17", "4" ],
-    "attributes" : [ "external" ],
-    "id" : "16"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ResourceProperty"
+      "IRI-based" : "ResourceProperty",
+      "undefined" : "Resource Property"
     },
-    "subClasses" : [ "10" ],
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "undefined" : "The characteristics or attribuets of a resource."
+    },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "6"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#DigitalObject",
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#Information",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "DigitalObject"
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36",
+        "type" : "label"
+      } ]
     },
-    "subClasses" : [ "1" ],
+    "label" : {
+      "IRI-based" : "Information",
+      "undefined" : "Information"
+    },
+    "comment" : {
+      "undefined" : "Information is an abstract concept that represents any kind of interpretations. For instance, information can be data generated by software systems or data used by people for communications."
+    },
     "attributes" : [ "external" ],
-    "id" : "22"
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PhysicalObject"
+      "IRI-based" : "PhysicalObject",
+      "undefined" : "Physical object"
     },
-    "subClasses" : [ "7" ],
+    "subClasses" : [ "12" ],
+    "comment" : {
+      "undefined" : "A physical object is a collection of matter."
+    },
     "attributes" : [ "external" ],
-    "id" : "23"
+    "id" : "10",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/location#Location",
     "baseIri" : "http://w3id.org/PLCO/ontology/location",
@@ -229,59 +202,20 @@
       "IRI-based" : "Location"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
-    "instances" : 0,
-    "union" : [ "17", "7" ],
-    "attributes" : [ "anonymous", "union" ],
     "id" : "13"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#Document",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Document",
-      "undefined" : "Document"
+      "IRI-based" : "ResourceCondition",
+      "undefined" : "Resource Condition"
     },
-    "id" : "1",
-    "superClasses" : [ "22" ]
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#StateProperty",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "StateProperty",
-      "undefined" : "State Property"
+    "comment" : {
+      "undefined" : "The status of a resource."
     },
-    "id" : "10",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#ProductItem",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProductItem",
-      "undefined" : "Product Item"
-    },
-    "id" : "7",
-    "superClasses" : [ "23" ]
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#ProductDesignSpecification",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProductDesignSpecification",
-      "undefined" : "Product Design Specification"
-    },
-    "id" : "4",
-    "superClasses" : [ "16" ]
+    "attributes" : [ "external" ],
+    "id" : "14"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#Product",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -294,34 +228,221 @@
       "undefined" : "An abstarct concept represent a product in general."
     },
     "id" : "17",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceQuality",
+      "undefined" : "Resource Quality"
+    },
+    "comment" : {
+      "undefined" : "Resource quality is derived based on assessments of resources considering the conditions and properties."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#Asset",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset",
+      "undefined" : "Asset"
+    },
+    "subClasses" : [ "8", "11" ],
+    "comment" : {
+      "undefined" : "Asset is sth that is valuable and useful to be used in activities, or owned by actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#Resource",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "ISO 59004:2024 - 3.1.5 resource",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resource",
+      "undefined" : "Resource"
+    },
+    "subClasses" : [ "16", "10", "17", "4" ],
+    "comment" : {
+      "undefined" : "Asset from which a solution is created or implemented. Depending on the context, reference to “resource” includes “raw material”, “feedstock”, “material” or “component”. Resource includes any energy type (e.g. the energy content or energy potential of materials). Note 4 to entry: Resources can be considered concerning both stocks and flows."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#DigitalObject",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalObject",
+      "undefined" : "Digital object"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "undefined" : "A digital object, e.g. a computer file, that is located on some server, hard drive, or on the web. Most often the digital object is the realization of some piece of information."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "11" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "12" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#Document",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "undefined" : "Document"
+    },
+    "id" : "1",
     "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#StateProperty",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateProperty",
+      "undefined" : "State Property"
+    },
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#ProductItem",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductItem",
+      "undefined" : "Product Item"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#ProductDesignSpecification",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductDesignSpecification",
+      "undefined" : "Product Design Specification"
+    },
+    "id" : "4",
+    "superClasses" : [ "11" ]
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "6",
-    "type" : "owl:objectProperty"
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "9",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "12",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "25",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "27",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "28",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "29",
@@ -331,25 +452,55 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "31",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "32",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "33",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
+    "id" : "35",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "37",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasDocumentID",
@@ -363,130 +514,114 @@
     "attributes" : [ "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#hadDesignDescription",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "hadDesignDescription",
-      "undefined" : "had design description"
-    },
-    "domain" : "4",
-    "attributes" : [ "datatype" ],
-    "id" : "3"
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#isStoredAt",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "isStoredAt",
-      "undefined" : "is stored at"
-    },
-    "domain" : "7",
-    "attributes" : [ "object" ],
-    "id" : "6"
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#hasStateProperty",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "hasStateProperty",
-      "undefined" : "has state property"
-    },
-    "domain" : "7",
-    "attributes" : [ "object" ],
-    "id" : "9"
-  }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#describes",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "13",
+    "range" : "5",
     "label" : {
       "IRI-based" : "describes",
       "undefined" : "describes"
     },
     "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "3"
+  }, {
+    "range" : "16",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasApplianceType",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "24",
+    "range" : "19",
     "label" : {
       "IRI-based" : "hasApplianceType",
       "undefined" : "has appliance type"
     },
-    "domain" : "7",
+    "domain" : "12",
     "attributes" : [ "datatype" ],
-    "id" : "25"
+    "id" : "18"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasFileType",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "15",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasFileType",
       "undefined" : "has file type"
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "26"
+    "id" : "21"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#hasDesignID",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "19",
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "10",
     "label" : {
-      "IRI-based" : "hasDesignID",
-      "undefined" : "has design id"
+      "IRI-based" : "hasPhysicalObject",
+      "undefined" : "has physical object"
     },
-    "domain" : "4",
-    "attributes" : [ "datatype" ],
-    "id" : "27"
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasStatePropertyValue",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "21",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasStatePropertyValue",
       "undefined" : "has state property value"
     },
-    "domain" : "10",
-    "attributes" : [ "datatype" ],
-    "id" : "28"
-  }, {
-    "range" : "23",
     "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "4",
     "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
-    "range" : "22",
-    "domain" : "1",
+    "range" : "9",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/product#hasFileName",
-    "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasFileName",
-      "undefined" : "has file name"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasVersionNumber",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "18",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasVersionNumber",
       "undefined" : "has version number"
     },
-    "domain" : "7",
+    "domain" : "12",
     "attributes" : [ "datatype" ],
-    "id" : "32"
-  }, {
-    "range" : "16",
-    "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "33"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#isModelledBy",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -495,29 +630,149 @@
       "IRI-based" : "isModelledBy",
       "undefined" : "is modelled by"
     },
-    "domain" : "7",
+    "domain" : "12",
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "36"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#hadDesignDescription",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hadDesignDescription",
+      "undefined" : "had design description"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#isStoredAt",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isStoredAt",
+      "undefined" : "is stored at"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasResourceProperty",
+      "undefined" : "has resource property"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "A resource can has specifc properties."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#hasStateProperty",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasStateProperty",
+      "undefined" : "has state property"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isRealizationOf",
+      "undefined" : "is realization of"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isAbout",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isAbout",
+      "undefined" : "is about"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Connecting the information to the object (physical, virtual, imaginary) that the information is about."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasResourceCondition",
+      "undefined" : "has resource condition"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "A resource can has specifc conditions."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasResourceQuality",
+      "undefined" : "has resource quality"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "A resource can has specifc qualities."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#hasDesignID",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasDesignID",
+      "undefined" : "has design id"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#hasFileName",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasFileName",
+      "undefined" : "has file name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasBrand",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
-    "range" : "11",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasBrand",
       "undefined" : "has brand"
     },
-    "domain" : "7",
+    "domain" : "12",
     "attributes" : [ "datatype" ],
-    "id" : "35"
-  }, {
-    "range" : "20",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "range" : "16",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
+    "id" : "53"
   } ]
 }
