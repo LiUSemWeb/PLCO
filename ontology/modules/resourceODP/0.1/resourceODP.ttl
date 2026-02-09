@@ -1,0 +1,228 @@
+@prefix : <http://w3id.org/PLCO/ontology/resourceODP#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://w3id.org/PLCO/ontology/resourceODP#> .
+
+<http://w3id.org/PLCO/ontology/resourceODP> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <http://w3id.org/PLCO/ontology/resourceODP/0.1> ;
+                                                  vann:preferredNamespacePrefix "plco-resourceODP" ;
+                                                 vann:preferredNamespaceUri "http://w3id.org/PLCO/ontology/resourceODP" ;
+                                                 dcterms:created "2026-02-05" ;
+                                              dcterms:creator "Huanyu Li" ;
+                                              dcterms:description "A ODP of the PLCO ontology network, defining aspects of the resource concept." ;
+                                              dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                              dcterms:title "PLCO Ontology Network - resourceODP Module" ;
+                                              rdfs:seeAlso <https://github.com/LiUSemWeb/PLCO> ;
+                                              owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#geoJSONLiteral
+<http://www.opengis.net/ont/geosparql#geoJSONLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject
+:hasPhysicalObject rdf:type owl:ObjectProperty ;
+                   rdfs:range :PhysicalObject ;
+                   rdfs:comment "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects." ;
+                   rdfs:label "has physical object" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition
+:hasResourceCondition rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Resource ;
+                      rdfs:range :ResourceCondition ;
+                      rdfs:comment "A resource can has specifc conditions." ;
+                      rdfs:label "has resource condition" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty
+:hasResourceProperty rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Resource ;
+                     rdfs:range :ResourceProperty ;
+                     rdfs:comment "A resource can has specifc properties." ;
+                     rdfs:label "has resource property" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality
+:hasResourceQuality rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Resource ;
+                    rdfs:range :ResourceQuality ;
+                    rdfs:comment "A resource can has specifc qualities." ;
+                    rdfs:label "has resource quality" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#isAbout
+:isAbout rdf:type owl:ObjectProperty ;
+         rdfs:domain :Information ;
+         rdfs:comment "Connecting the information to the object (physical, virtual, imaginary) that the information is about." ;
+         rdfs:label "is about" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf
+:isRealizationOf rdf:type owl:ObjectProperty ;
+                 rdfs:range :Information ;
+                 rdfs:comment "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet." ;
+                 rdfs:label "is realization of" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/resourceODP#Asset
+:Asset rdf:type owl:Class ;
+       rdfs:comment "Asset is sth that is valuable and useful to be used in activities, or owned by actors." ;
+       rdfs:label "Asset" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#DigitalObject
+:DigitalObject rdf:type owl:Class ;
+               rdfs:subClassOf :Resource ;
+               rdfs:comment "A digital object, e.g. a computer file, that is located on some server, hard drive, or on the web. Most often the digital object is the realization of some piece of information." ;
+               rdfs:label "Digital object" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#Information
+:Information rdf:type owl:Class ;
+             rdfs:subClassOf :Asset ;
+             rdfs:comment "Information is an abstract concept that represents any kind of interpretations. For instance, information can be data generated by software systems or data used by people for communications." ;
+             rdfs:label "Information" ;
+             rdfs:seeAlso "http://emmo.info/emmo#EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject
+:PhysicalObject rdf:type owl:Class ;
+                rdfs:subClassOf :Resource ;
+                rdfs:comment "A physical object is a collection of matter." ;
+                rdfs:label "Physical object" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#Resource
+:Resource rdf:type owl:Class ;
+          rdfs:subClassOf :Asset ,
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceCondition ;
+                                                   owl:someValuesFrom :ResourceCondition
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceCondition ;
+                                                   owl:allValuesFrom :ResourceCondition
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ,
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceProperty ;
+                                                   owl:someValuesFrom :ResourceProperty
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceProperty ;
+                                                   owl:allValuesFrom :ResourceProperty
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ,
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceQuality ;
+                                                   owl:someValuesFrom :ResourceQuality
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasResourceQuality ;
+                                                   owl:allValuesFrom :ResourceQuality
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+          rdfs:comment "Asset from which a solution is created or implemented. Depending on the context, reference to “resource” includes “raw material”, “feedstock”, “material” or “component”. Resource includes any energy type (e.g. the energy content or energy potential of materials). Note 4 to entry: Resources can be considered concerning both stocks and flows." ;
+          rdfs:isDefinedBy "ISO 59004:2024 - 3.1.5 resource" ;
+          rdfs:label "Resource" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition
+:ResourceCondition rdf:type owl:Class ;
+                   rdfs:comment "The status of a resource." ;
+                   rdfs:label "Resource Condition" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty
+:ResourceProperty rdf:type owl:Class ;
+                  rdfs:comment "The characteristics or attribuets of a resource." ;
+                  rdfs:label "Resource Property" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality
+:ResourceQuality rdf:type owl:Class ;
+                 rdfs:comment "Resource quality is derived based on assessments of resources considering the conditions and properties." ;
+                 rdfs:label "Resource Quality" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

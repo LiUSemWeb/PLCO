@@ -1,0 +1,218 @@
+@prefix : <http://w3id.org/PLCO/ontology/processODP#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://w3id.org/PLCO/ontology/processODP#> .
+
+<http://w3id.org/PLCO/ontology/processODP> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://w3id.org/PLCO/ontology/processODP/0.1/> ;
+                                            dcterms:created "2026-02-05" ;
+                                            dcterms:creator "Huanyu Li" ;
+                                            dcterms:description "A ODP of the PLCO ontology network, defining aspects of the process concept." ;
+                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                            dcterms:title "PLCO Ontology Network - ProcessODP Module" ;
+                                            vann:preferredNamespacePrefix "plco-processODP" ;
+                                            vann:preferredNamespaceUri "http://w3id.org/PLCO/ontology/processODP" ;
+                                            rdfs:seeAlso <https://github.com/LiUSemWeb/PLCO> ;
+                                            owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/processODP#duringTime
+:duringTime rdf:type owl:ObjectProperty ;
+            rdfs:range :TimeInterval ;
+            rdfs:comment "The time interval during which something, e.g. a process or event, takes place." ;
+            rdfs:label "during time" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          rdfs:domain :Process ;
+          rdfs:comment "The inputs to a process or event." ;
+          rdfs:label "has input" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :Process ;
+           rdfs:comment "The output of a process or event." ;
+           rdfs:label "has output" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#isPerformedOn
+:isPerformedOn rdf:type owl:ObjectProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range <http://w3id.org/PLCO/ontology/resourceODP#Resource> ;
+               rdfs:label "is performed on" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#isSettingFor
+:isSettingFor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Situation ;
+              rdfs:comment "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state." ;
+              rdfs:label "is the setting for" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/processODP#endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TimeInterval ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "Represents the end time of a time interval." ;
+         rdfs:label "end time" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasActivityDate
+:hasActivityDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Activity ;
+                 rdfs:range xsd:date ;
+                 rdfs:label "had activity date" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasActivityID
+:hasActivityID rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Activity ;
+               rdfs:range xsd:string ;
+               rdfs:label "has activity ID" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasActivityType
+:hasActivityType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Activity ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has activity type" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TimeInterval ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "Represents the start time of a time interval." ;
+           rdfs:label "start time" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/processODP#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:label "Activity" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasInput ;
+                                                owl:someValuesFrom owl:Thing
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasOutput ;
+                                                owl:someValuesFrom owl:Thing
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+       rdfs:comment "Something that happens within a given context or (short) timeframe." ;
+       rdfs:label "Event" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasInput ;
+                                                  owl:someValuesFrom owl:Thing
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasOutput ;
+                                                  owl:someValuesFrom owl:Thing
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+         rdfs:comment "Something that takes place over a (longer) period of time and changes some state of affairs."@en ;
+         rdfs:label "Process" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#Situation
+:Situation rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :isSettingFor ;
+                             owl:someValuesFrom owl:Thing
+                           ] ;
+           rdfs:comment "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time." ;
+           rdfs:label "Situation" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#TimeInterval
+:TimeInterval rdf:type owl:Class ;
+              rdfs:comment "A temporal entity has a starting time and an ending time." ;
+              rdfs:label "Time Interval" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#Resource
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

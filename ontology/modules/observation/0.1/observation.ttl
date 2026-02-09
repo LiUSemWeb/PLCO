@@ -1,0 +1,212 @@
+@prefix : <http://w3id.org/PLCO/ontology/observation#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://w3id.org/PLCO/ontology/observation#> .
+
+<http://w3id.org/PLCO/ontology/observation> rdf:type owl:Ontology ;
+                                             owl:versionIRI <http://w3id.org/PLCO/ontology/observation/0.1> ;
+                                             owl:imports <https://liusemweb.github.io/PLCO/modules/time/0.1/ontology.ttl> ;
+                                             dcterms:created "2026-02-05" ;
+                                             dcterms:creator "Huanyu Li" ;
+                                             dcterms:description "A module of the PLCO ontology network, defining aspects of the observation concept." ;
+                                             dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                             dcterms:title "PLCO Ontology Network - Observation Module" ;
+                                             vann:preferredNamespacePrefix "plco-observation" ;
+                                             vann:preferredNamespaceUri "http://w3id.org/PLCO/ontology/observation" ;
+                                             rdfs:seeAlso <https://github.com/LiUSemWeb/PLCO> ;
+                                             owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/observation#consistsOf
+:consistsOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :ObservationCollection ;
+            rdfs:range :Observation ;
+            rdfs:label "consists of" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#hasObservationParameter
+:hasObservationParameter rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Observation ;
+                         rdfs:range :ObservationParameter ;
+                         rdfs:label "has observation parameter" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#hasObservationValue
+:hasObservationValue rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Observation ;
+                     rdfs:range :ObservationValue ;
+                     rdfs:label "has observation value" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter
+:hasValueForObservationParameter rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ObservationParameter ;
+                                 rdfs:range :ObservationValue ;
+                                 rdfs:label "has value for observation parameter" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#isObservedBy
+:isObservedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :observesOnProperty ;
+              rdfs:domain :ObservableProperty ;
+              rdfs:range :Observation ;
+              rdfs:label "is observed by" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest
+:observesOnFeatureOfInterest rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Observation ;
+                             rdfs:range :FeatureOfInterest ;
+                             rdfs:label "observes on feature of interest" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#observesOnProperty
+:observesOnProperty rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Observation ;
+                    rdfs:range :ObservableProperty ;
+                    rdfs:label "observes on property" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/observation#hasNumericValue
+:hasNumericValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ObservationValue ;
+                 rdfs:range xsd:double ;
+                 rdfs:label "has numeric value" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#hasTextualValue
+:hasTextualValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ObservationValue ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has textual value" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#observesAt
+:observesAt rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://w3id.org/PLCO/ontology/time#hasTimeStamp> ;
+            rdfs:domain :Observation ;
+            rdfs:label "observes at" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#observesDuring
+:observesDuring rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://www.w3.org/2006/time#hasXSDDuration> ;
+                rdfs:domain :Observation ;
+                rdfs:label "observes during" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/PLCO/ontology/observation#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class ;
+                   rdfs:label "Feature Of Interest" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#ObservableProperty
+:ObservableProperty rdf:type owl:Class ;
+                    rdfs:label "Observable Property" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#Observation
+:Observation rdf:type owl:Class ;
+             rdfs:label "Observation" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#ObservationCollection
+:ObservationCollection rdf:type owl:Class ;
+                       rdfs:label "Observation Collection" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#ObservationParameter
+:ObservationParameter rdf:type owl:Class ;
+                      rdfs:label "Observation Parameter" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#ObservationValue
+:ObservationValue rdf:type owl:Class ;
+                  rdfs:label "Observation Value" .
+
+
+###  http://w3id.org/PLCO/ontology/resourceODP#StateProperty
+<http://w3id.org/PLCO/ontology/resourceODP#StateProperty> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( <http://w3id.org/PLCO/ontology/resourceODP#StateProperty>
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isObservedBy ;
+                         owl:someValuesFrom :Observation
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isObservedBy ;
+                         owl:allValuesFrom :Observation
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ObservableProperty
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

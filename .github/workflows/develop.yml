@@ -1,0 +1,135 @@
+name: Publish dev ontologies and doc in docs/dev
+run-name: Publish dev ontologies and doc
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'ontology/**/*.owl'
+      - 'ontology/**/*.ttl'
+      - 'ontology/**/*.rdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-dev-documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout develop branch
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+          fetch-depth: 0
+      
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Generate documentation on develop
+        run: |
+          # Clean old dev documentation before generating new ones
+          echo "Cleaning old dev documentation..."
+          rm -rf docs/dev
+          mkdir -p docs/dev
+          
+          find ontology -type f \( -name "*.owl" -o -name "*.ttl" -o -name "*.rdf" \) | while read ontology_file; do
+            echo "Processing $ontology_file (development version)"
+            
+            # Extract relative path from ontology/
+            # Example: ontology/modules/core/0.1/core.owl -> modules/core/0.1
+            relative_path="${ontology_file#ontology/}"
+            
+            # Get directory path (preserves modules/ or demo/)
+            dir_path=$(dirname "$relative_path")
+            
+            # Get filename without extension
+            file_name=$(basename "$ontology_file")
+            base_name="${file_name%.*}"
+            
+            # Dev docs preserve full structure: docs/dev/modules/core/0.1/
+            output_dir="docs/dev/$dir_path"
+            mkdir -p "$output_dir"
+            
+            echo "  Path: $dir_path"
+            echo "  Ontology name: $base_name"
+            echo "  Output directory: $output_dir"
+            
+            java -jar tools/widoco-1.4.25.jar \
+              -ontFile "$ontology_file" \
+              -outFolder "$output_dir" \
+              -rewriteAll \
+              -webVowl \
+              -licensius 
+            
+            echo "Development documentation generated for $ontology_file in $output_dir"
+            
+            if [ -f "$output_dir/index-en.html" ]; then
+              mv "$output_dir/index-en.html" "$output_dir/index.html"
+              echo "Renamed index-en.html to index.html"
+            fi
+            
+            echo "---"
+          done
+          
+          # Create 'latest' folders for each module in dev/modules/ and dev/demo/
+          echo "Creating dev/latest folders..."
+          for category_dir in docs/dev/*/; do
+            if [ -d "$category_dir" ]; then
+              category_name=$(basename "$category_dir")
+              
+              echo "Processing dev category: $category_name"
+              
+              # Process each module within the category
+              for module_dir in "$category_dir"*/; do
+                if [ -d "$module_dir" ]; then
+                  module_name=$(basename "$module_dir")
+                  
+                  # Find the highest version number (semantic versioning)
+                  # Exclude 'latest' folder explicitly
+                  latest_version=$(find "$module_dir" -mindepth 1 -maxdepth 1 -type d -not -name 'latest' | \
+                                  grep -E '/[0-9]+\.[0-9]+' | \
+                                  sort -V | \
+                                  tail -1)
+                  
+                  if [ -n "$latest_version" ]; then
+                    echo "  Creating dev/latest folder for $category_name/$module_name"
+                    echo "    Latest version: $(basename $latest_version)"
+                    
+                    # Copy the latest version to 'latest' folder
+                    rm -rf "$module_dir/latest"
+                    cp -r "$latest_version" "$module_dir/latest"
+                    
+                    echo "    Created: $module_dir/latest"
+                  fi
+                fi
+              done
+            fi
+          done
+
+          # Build index page and copy to dev folder
+          echo "Building index page for dev..."
+          python build_index.py docs/dev/index.html
+          #cp docs/index.html docs/dev/index.html
+          #echo "Copied index.html to docs/dev/"
+      
+      - name: Commit and push to main
+        run: |
+          git checkout main
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -f docs/dev/
+          git commit -m "publish dev ontologies [skip ci]"
+          git push origin main
