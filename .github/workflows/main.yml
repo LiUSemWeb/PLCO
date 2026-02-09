@@ -1,0 +1,141 @@
+name: Publish main ontologies and doc in docs
+run-name: Publish main ontologies and doc
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ontology/**/*.owl'
+      - 'ontology/**/*.ttl'
+      - 'ontology/**/*.rdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      
+      #- name: Download WIDOCO
+      #  run: |
+      #    wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar -O widoco.jar
+      
+      - name: Generate documentation
+        run: |
+          find ontology -type f \( -name "*.owl" -o -name "*.ttl" -o -name "*.rdf" \) | while read ontology_file; do
+            echo "Processing $ontology_file"
+            
+            # Extract the relative path from ontology/
+            # Example: ontology/modules/core/0.1/myonto.owl -> modules/core/0.1/myonto.owl
+            relative_path="${ontology_file#ontology/}"
+            
+            # Get the directory path without the filename
+            # Example: modules/core/0.1/myonto.owl -> modules/core/0.1
+            dir_path=$(dirname "$relative_path")
+            
+            # Get the filename without extension for logging
+            file_name=$(basename "$ontology_file")
+            base_name="${file_name%.*}"
+            
+            # Create output directory maintaining the full structure
+            # Example: docs/modules/core/0.1/
+            output_dir="docs/$dir_path"
+            mkdir -p "$output_dir"
+            
+            echo "  Path: $dir_path"
+            echo "  Ontology name: $base_name"
+            echo "  Output directory: $output_dir"
+            
+            java -jar tools/widoco-1.4.25.jar \
+              -ontFile "$ontology_file" \
+              -outFolder "$output_dir" \
+              -rewriteAll \
+              -webVowl \
+              -licensius 
+            
+            echo "Documentation generated for $ontology_file in $output_dir"
+            
+            if [ -f "$output_dir/index-en.html" ]; then
+              mv "$output_dir/index-en.html" "$output_dir/index.html"
+              echo "Renamed index-en.html to index.html"
+            fi
+            
+            echo "---"
+          done
+          
+          # Create 'latest' folders for each module in modules/ and demo/
+          echo "Creating latest folders..."
+          for category_dir in docs/*/; do
+            if [ -d "$category_dir" ]; then
+              category_name=$(basename "$category_dir")
+              
+              # Skip 'dev' folder
+              if [ "$category_name" = "dev" ]; then
+                continue
+              fi
+              
+              echo "Processing category: $category_name"
+              
+              # Process each module within the category
+              for module_dir in "$category_dir"*/; do
+                if [ -d "$module_dir" ]; then
+                  module_name=$(basename "$module_dir")
+                  
+                  # Find the highest version number (semantic versioning)
+                  latest_version=$(find "$module_dir" -mindepth 1 -maxdepth 1 -type d | \
+                                  grep -E '/[0-9]+\.[0-9]+' | \
+                                  sort -V | \
+                                  tail -1)
+                  
+                  if [ -n "$latest_version" ]; then
+                    echo "  Creating latest folder for $category_name/$module_name"
+                    echo "    Latest version: $(basename $latest_version)"
+                    
+                    # Copy the latest version to 'latest' folder
+                    rm -rf "$module_dir/latest"
+                    cp -r "$latest_version" "$module_dir/latest"
+                    
+                    echo "    Created: $module_dir/latest"
+                  fi
+                fi
+              done
+            fi
+          done
+      
+      - name: Build index page
+        run: python build_index.py
+      
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -f docs/
+          git commit -m "update docs" -a
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
