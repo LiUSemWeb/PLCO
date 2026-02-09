@@ -1,0 +1,198 @@
+<http://w3id.org/PLCO/ontology/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/PLCO/ontology/location> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/location/0.1> .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/dc/terms/created> "2026-02-05" .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/dc/terms/creator> "Huanyu Li" .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/dc/terms/description> "A module of the PLCO ontology network, defining aspects of the location concept." .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/dc/terms/title> "PLCO Ontology Network - Location Module" .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/vocab/vann/preferredNamespacePrefix> "plco-location" .
+<http://w3id.org/PLCO/ontology/location> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/PLCO/ontology/location" .
+<http://w3id.org/PLCO/ontology/location> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LiUSemWeb/PLCO> .
+<http://w3id.org/PLCO/ontology/location> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#geoJSONLiteral
+<http://www.opengis.net/ont/geosparql#geoJSONLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gMonthYear
+<http://www.w3.org/2001/XMLSchema#gMonthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/location#hasLocation
+<http://w3id.org/PLCO/ontology/location#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/location#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/location#Location> .
+<http://w3id.org/PLCO/ontology/location#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the location of an actor or resource." .
+<http://w3id.org/PLCO/ontology/location#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/location#hasCity
+<http://w3id.org/PLCO/ontology/location#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the name of a city." .
+<http://w3id.org/PLCO/ontology/location#hasCity> <http://www.w3.org/2000/01/rdf-schema#label> "has city" .
+# 
+# http://w3id.org/PLCO/ontology/location#hasCountry
+<http://w3id.org/PLCO/ontology/location#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/location#Location> .
+<http://w3id.org/PLCO/ontology/location#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the name of a country." .
+<http://w3id.org/PLCO/ontology/location#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "has country" .
+# 
+# http://w3id.org/PLCO/ontology/location#hasCountryCode
+<http://w3id.org/PLCO/ontology/location#hasCountryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the code of a country's name according to ISO 3166-1." .
+<http://w3id.org/PLCO/ontology/location#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#label> "has country code" .
+<http://w3id.org/PLCO/ontology/location#hasCountryCode> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO 3166-1 (Codes for the representation of names of countries and their subdivisions – Part 1: Country code)" .
+# 
+# http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber
+<http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The Global Location Number (GLN) is part of the GS1 systems of standards." .
+<http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has global location number" .
+<http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.gs1.org/standards/id-keys/gln" .
+# 
+# http://w3id.org/PLCO/ontology/location#hasPostalCode
+<http://w3id.org/PLCO/ontology/location#hasPostalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasPostalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasPostalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent postal code" .
+<http://w3id.org/PLCO/ontology/location#hasPostalCode> <http://www.w3.org/2000/01/rdf-schema#label> "has postal code" .
+<http://w3id.org/PLCO/ontology/location#hasPostalCode> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Universal Postal Union (UPU) S42 standard" .
+# 
+# http://w3id.org/PLCO/ontology/location#hasStreetAddress
+<http://w3id.org/PLCO/ontology/location#hasStreetAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/location#hasStreetAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/location#hasStreetAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents address of a street, including e.g., street number and name." .
+<http://w3id.org/PLCO/ontology/location#hasStreetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has street address" .
+# 
+# http://www.opengis.net/ont/geosparql#asGML
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#gmlLiteral> .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal> .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2004/02/skos/core#definition> "The GML serialization of a Geometry."@en .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2004/02/skos/core#prefLabel> "as GML"@en .
+# 
+# http://www.opengis.net/ont/geosparql#asGeoJSON
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#geoJSONLiteral> .
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal> .
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/2004/02/skos/core#definition> "The GeoJSON serialization of a Geometry."@en .
+<http://www.opengis.net/ont/geosparql#asGeoJSON> <http://www.w3.org/2004/02/skos/core#prefLabel> "as GeoJSON"@en .
+# 
+# http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal> .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2004/02/skos/core#definition> "The WKT serialization of a Geometry."@en .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2004/02/skos/core#prefLabel> "as WKT"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/location#Location
+<http://w3id.org/PLCO/ontology/location#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/location#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://w3id.org/PLCO/ontology/location#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "From geography perspecive, a location represents a region which can be geometry point, line or area on Earth." .
+<http://w3id.org/PLCO/ontology/location#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2004/02/skos/core#definition> "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS)."@en .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometry"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

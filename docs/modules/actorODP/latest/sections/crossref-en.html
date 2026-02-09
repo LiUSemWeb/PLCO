@@ -1,0 +1,490 @@
+<h2 id="crossreference" class="list">Cross-reference for PLCO Ontology Network - Product Module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PLCO Ontology Network - Product Module.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#Actor" title="http://w3id.org/PLCO/ontology/actorODP#Actor">Actor</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#Capability" title="http://w3id.org/PLCO/ontology/actorODP#Capability">Capability</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation" title="http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation">Collaboration Participation</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#Infrastructure" title="http://w3id.org/PLCO/ontology/actorODP#Infrastructure">Infrastructure</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation">Resource Participation</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceRelation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceRelation">Resource Relation</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#Role" title="http://w3id.org/PLCO/ontology/actorODP#Role">Role</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#Actor">
+  <h3>Actor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#Actor</p>
+  <div class="comment">
+   <span class="markdown">An agent able to act in the context of a circular value network, e.g. an organisation, person.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityOf" title="http://w3id.org/PLCO/ontology/actorODP#capabilityOf">capability of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingActor" title="http://w3id.org/PLCO/ontology/actorODP#participatingActor">participating actor</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#Capability">
+  <h3>Capability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#Capability</p>
+  <div class="comment">
+   <span class="markdown">Something that the actor is capable of doing, e.g. perfomring a certain role in a process, based on some properties, such as access to infrastructure, resources and know-how.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityOf" title="http://w3id.org/PLCO/ontology/actorODP#capabilityOf">capability of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityProperty" title="http://w3id.org/PLCO/ontology/actorODP#capabilityProperty">capability property</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#basedOnCapability" title="http://w3id.org/PLCO/ontology/actorODP#basedOnCapability">based on capability</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation">
+  <h3>Collaboration Participation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation</p>
+  <div class="comment">
+   <span class="markdown">The relation involving the role of a certain actor with respect to a value network or a process in such a network, e.g. an organisation (actor) acting as the recycler (role) in a glass recycling value netowrk (network) at a specific point or period in time. Or an organisation (actor) acting as the dismantler (role) in a dismantling step of a building deconstruction process (process step) at a specific point or period in time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#basedOnCapability" title="http://w3id.org/PLCO/ontology/actorODP#basedOnCapability">based on capability</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participationIn" title="http://w3id.org/PLCO/ontology/actorODP#participationIn">participation in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#Infrastructure">
+  <h3>Infrastructure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#Infrastructure</p>
+  <div class="comment">
+   <span class="markdown">An infrastructure refers to facilities, services, or systems for participations to function.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityOf" title="http://w3id.org/PLCO/ontology/actorODP#capabilityOf">capability of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure" title="http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure">participating infrastructure</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#Participation">
+  <h3>Participation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#Participation</p>
+  <div class="comment">
+   <span class="markdown">Represents the participation of objects in some situation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation" title="http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation">Collaboration Participation</a> <sup class="type-c" title="class">c</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation">Resource Participation</a> <sup class="type-c" title="class">c</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceRelation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceRelation">Resource Relation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#participantRole" title="http://w3id.org/PLCO/ontology/actorODP#participantRole">participant role</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingActor" title="http://w3id.org/PLCO/ontology/actorODP#participatingActor">participating actor</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure" title="http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure">participating infrastructure</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participationEndTime" title="http://w3id.org/PLCO/ontology/actorODP#participationEndTime">participation end time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participationStartTime" title="http://w3id.org/PLCO/ontology/actorODP#participationStartTime">participation start time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participationTimePoint" title="http://w3id.org/PLCO/ontology/actorODP#participationTimePoint">participation time point</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation">
+  <h3>Resource Participation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation</p>
+  <div class="comment">
+   <span class="markdown">The generic relation representing the particpation of a resource in some relation. For example, it can be specialized to represent a reified version of an object or data property.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingObject" title="http://w3id.org/PLCO/ontology/actorODP#participatingObject">participating object</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingSubject" title="http://w3id.org/PLCO/ontology/actorODP#participatingSubject">participating subject</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#ResourceRelation">
+  <h3>Resource Relation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#ResourceRelation</p>
+  <div class="comment">
+   <span class="markdown">The relation involving the role of a certain actor with respect to a certain resource, e.g. an organisation or individual (actor) owning (role) a specific product (resource) at a specific point or period in time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#participatingResource" title="http://w3id.org/PLCO/ontology/actorODP#participatingResource">participating resource</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#Role">
+  <h3>Role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#Role</p>
+  <div class="comment">
+   <span class="markdown">A role that an actor can take in a specific context. Applies both to roles in the context of resources, such as owner, manufacturer, reseller etc. of that resource, as well as roles in relation to a circular value network, such as recycler, dismantler, transporter etc., in relation to a material flow.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://w3id.org/PLCO/ontology/actorODP#participantRole" title="http://w3id.org/PLCO/ontology/actorODP#participantRole">participant role</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#basedOnCapability" title="http://w3id.org/PLCO/ontology/actorODP#basedOnCapability">based on capability</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityOf" title="http://w3id.org/PLCO/ontology/actorODP#capabilityOf">capability of</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#capabilityProperty" title="http://w3id.org/PLCO/ontology/actorODP#capabilityProperty">capability property</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participantRole" title="http://w3id.org/PLCO/ontology/actorODP#participantRole">participant role</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participatingActor" title="http://w3id.org/PLCO/ontology/actorODP#participatingActor">participating actor</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure" title="http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure">participating infrastructure</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participatingObject" title="http://w3id.org/PLCO/ontology/actorODP#participatingObject">participating object</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participatingResource" title="http://w3id.org/PLCO/ontology/actorODP#participatingResource">participating resource</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participatingSubject" title="http://w3id.org/PLCO/ontology/actorODP#participatingSubject">participating subject</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participationIn" title="http://w3id.org/PLCO/ontology/actorODP#participationIn">participation in</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#basedOnCapability">
+  <h3>based on capability<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#basedOnCapability</p>
+  <div class="comment">
+   <span class="markdown">An actor participates in a collaboration based on that it has some capability that is useful for the collaboration.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation" title="http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation">Collaboration Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Capability" title="http://w3id.org/PLCO/ontology/actorODP#Capability">Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#capabilityOf">
+  <h3>capability of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#capabilityOf</p>
+  <div class="comment">
+   <span class="markdown">Relates to the actor holding the capability.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Capability" title="http://w3id.org/PLCO/ontology/actorODP#Capability">Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Actor" title="http://w3id.org/PLCO/ontology/actorODP#Actor">Actor</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#http://w3id.org/PLCO/ontology/actorODP#Infrastructure" title="http://w3id.org/PLCO/ontology/actorODP#Infrastructure">Infrastructure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#capabilityProperty">
+  <h3>capability property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#capabilityProperty</p>
+  <div class="comment">
+   <span class="markdown">Relates some properties to the capability, such as the parameters of it, or the needed resources.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Capability" title="http://w3id.org/PLCO/ontology/actorODP#Capability">Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participantRole">
+  <h3>participant role<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participantRole</p>
+  <div class="comment">
+   <span class="markdown">Holds the value of the role of the participant in this participation relation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Role" title="http://w3id.org/PLCO/ontology/actorODP#Role">Role</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participatingActor">
+  <h3>participating actor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participatingActor</p>
+  <div class="comment">
+   <span class="markdown">Holds the value of the actor involved in this participation relation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Actor" title="http://w3id.org/PLCO/ontology/actorODP#Actor">Actor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure">
+  <h3>participating infrastructure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure</p>
+  <div class="comment">
+   <span class="markdown">Holds the value of the infrastructure involved in this participation relation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Infrastructure" title="http://w3id.org/PLCO/ontology/actorODP#Infrastructure">Infrastructure</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participatingObject">
+  <h3>participating object<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participatingObject</p>
+  <div class="comment">
+   <span class="markdown">Participating object in a resource participation. This is part of a resource participation that can be a directional relation, and the participating object is the end point of the relation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation">Resource Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/PLCO/ontology/resourceODP/Resource" target="_blank" title="http://w3id.org/PLCO/ontology/resourceODP/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participatingResource">
+  <h3>participating resource<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participatingResource</p>
+  <div class="comment">
+   <span class="markdown">The resource that this participation relation relates to, i.e. for which the actor holds the specified role.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceRelation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceRelation">Resource Relation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/PLCO/ontology/resourceODP/Resource" target="_blank" title="http://w3id.org/PLCO/ontology/resourceODP/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participatingSubject">
+  <h3>participating subject<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participatingSubject</p>
+  <div class="comment">
+   <span class="markdown">Participating subject in a resource participation. This is part of a resource participation that can be a directional relation, and the participating subject is the starting point of the relation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation" title="http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation">Resource Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/PLCO/ontology/resourceODP/Resource" target="_blank" title="http://w3id.org/PLCO/ontology/resourceODP/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participationIn">
+  <h3>participation in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participationIn</p>
+  <div class="comment">
+   <span class="markdown">The collaboration or process that this participation relates to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation" title="http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation">Collaboration Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/PLCO/ontology/processODP/Process" target="_blank" title="http://w3id.org/PLCO/ontology/processODP/Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participationEndTime" title="http://w3id.org/PLCO/ontology/actorODP#participationEndTime">participation end time</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participationStartTime" title="http://w3id.org/PLCO/ontology/actorODP#participationStartTime">participation start time</a></li>
+  <li><a href="#http://w3id.org/PLCO/ontology/actorODP#participationTimePoint" title="http://w3id.org/PLCO/ontology/actorODP#participationTimePoint">participation time point</a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participationEndTime">
+  <h3>participation end time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participationEndTime</p>
+  <div class="comment">
+   <span class="markdown">The end of a time interval.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gMonthYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gMonthYear">g Month Year</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gYear">g Year</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participationStartTime">
+  <h3>participation start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participationStartTime</p>
+  <div class="comment">
+   <span class="markdown">The start of a time interval.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gMonthYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gMonthYear">g Month Year</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gYear">g Year</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://w3id.org/PLCO/ontology/actorODP#participationTimePoint">
+  <h3>participation time point<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/actorODP#participationTimePoint</p>
+  <div class="comment">
+   <span class="markdown">The point in time when something took place or was valid.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://w3id.org/PLCO/ontology/actorODP#Participation" title="http://w3id.org/PLCO/ontology/actorODP#Participation">Participation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gMonthYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gMonthYear">g Month Year</a> <span class="logic">or</span> <a href="http://www.w3.org/2001/XMLSchema#gYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gYear">g Year</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

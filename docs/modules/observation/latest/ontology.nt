@@ -1,0 +1,207 @@
+<http://w3id.org/PLCO/ontology/observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/PLCO/ontology/observation> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/observation/0.1> .
+<http://w3id.org/PLCO/ontology/observation> <http://www.w3.org/2002/07/owl#imports> <https://liusemweb.github.io/PLCO/modules/time/0.1/ontology.ttl> .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/dc/terms/created> "2026-02-05" .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/dc/terms/creator> "Huanyu Li" .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/dc/terms/description> "A module of the PLCO ontology network, defining aspects of the observation concept." .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/dc/terms/title> "PLCO Ontology Network - Observation Module" .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/vocab/vann/preferredNamespacePrefix> "plco-observation" .
+<http://w3id.org/PLCO/ontology/observation> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/PLCO/ontology/observation" .
+<http://w3id.org/PLCO/ontology/observation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LiUSemWeb/PLCO> .
+<http://w3id.org/PLCO/ontology/observation> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/observation#consistsOf
+<http://w3id.org/PLCO/ontology/observation#consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#ObservationCollection> .
+<http://w3id.org/PLCO/ontology/observation#consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
+# 
+# http://w3id.org/PLCO/ontology/observation#hasObservationParameter
+<http://w3id.org/PLCO/ontology/observation#hasObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#ObservationParameter> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has observation parameter" .
+# 
+# http://w3id.org/PLCO/ontology/observation#hasObservationValue
+<http://w3id.org/PLCO/ontology/observation#hasObservationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#ObservationValue> .
+<http://w3id.org/PLCO/ontology/observation#hasObservationValue> <http://www.w3.org/2000/01/rdf-schema#label> "has observation value" .
+# 
+# http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter
+<http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#ObservationParameter> .
+<http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#ObservationValue> .
+<http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has value for observation parameter" .
+# 
+# http://w3id.org/PLCO/ontology/observation#isObservedBy
+<http://w3id.org/PLCO/ontology/observation#isObservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#isObservedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/PLCO/ontology/observation#observesOnProperty> .
+<http://w3id.org/PLCO/ontology/observation#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#ObservableProperty> .
+<http://w3id.org/PLCO/ontology/observation#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is observed by" .
+# 
+# http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest
+<http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#FeatureOfInterest> .
+<http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "observes on feature of interest" .
+# 
+# http://w3id.org/PLCO/ontology/observation#observesOnProperty
+<http://w3id.org/PLCO/ontology/observation#observesOnProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesOnProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#observesOnProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/observation#ObservableProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesOnProperty> <http://www.w3.org/2000/01/rdf-schema#label> "observes on property" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/observation#hasNumericValue
+<http://w3id.org/PLCO/ontology/observation#hasNumericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#ObservationValue> .
+<http://w3id.org/PLCO/ontology/observation#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://w3id.org/PLCO/ontology/observation#hasNumericValue> <http://www.w3.org/2000/01/rdf-schema#label> "has numeric value" .
+# 
+# http://w3id.org/PLCO/ontology/observation#hasTextualValue
+<http://w3id.org/PLCO/ontology/observation#hasTextualValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#hasTextualValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#ObservationValue> .
+<http://w3id.org/PLCO/ontology/observation#hasTextualValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/observation#hasTextualValue> <http://www.w3.org/2000/01/rdf-schema#label> "has textual value" .
+# 
+# http://w3id.org/PLCO/ontology/observation#observesAt
+<http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/PLCO/ontology/time#hasTimeStamp> .
+<http://w3id.org/PLCO/ontology/time#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#observesAt> <http://www.w3.org/2000/01/rdf-schema#label> "observes at" .
+# 
+# http://w3id.org/PLCO/ontology/observation#observesDuring
+<http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasXSDDuration> .
+<http://www.w3.org/2006/time#hasXSDDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/observation#Observation> .
+<http://w3id.org/PLCO/ontology/observation#observesDuring> <http://www.w3.org/2000/01/rdf-schema#label> "observes during" .
+# 
+# http://w3id.org/PLCO/ontology/time#hasTimeStamp
+# 
+# http://www.w3.org/2006/time#hasXSDDuration
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/observation#FeatureOfInterest
+<http://w3id.org/PLCO/ontology/observation#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest" .
+# 
+# http://w3id.org/PLCO/ontology/observation#ObservableProperty
+<http://w3id.org/PLCO/ontology/observation#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property" .
+# 
+# http://w3id.org/PLCO/ontology/observation#Observation
+<http://w3id.org/PLCO/ontology/observation#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation" .
+# 
+# http://w3id.org/PLCO/ontology/observation#ObservationCollection
+<http://w3id.org/PLCO/ontology/observation#ObservationCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#ObservationCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Observation Collection" .
+# 
+# http://w3id.org/PLCO/ontology/observation#ObservationParameter
+<http://w3id.org/PLCO/ontology/observation#ObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#ObservationParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Observation Parameter" .
+# 
+# http://w3id.org/PLCO/ontology/observation#ObservationValue
+<http://w3id.org/PLCO/ontology/observation#ObservationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/observation#ObservationValue> <http://www.w3.org/2000/01/rdf-schema#label> "Observation Value" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#StateProperty
+<http://w3id.org/PLCO/ontology/resourceODP#StateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/PLCO/ontology/observation#Observation> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/observation#isObservedBy> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/observation#Observation> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/observation#isObservedBy> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/resourceODP#StateProperty> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/observation#ObservableProperty> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
