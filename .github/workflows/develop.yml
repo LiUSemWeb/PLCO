@@ -127,7 +127,13 @@ jobs:
       
       - name: Commit and push to main
         run: |
+          cp -r docs/dev /tmp/dev-docs-temp
+          
           git checkout main
+          # Restore the newly generated docs
+          rm -rf docs/dev
+          cp -r /tmp/dev-docs-temp docs/dev
+          
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -f docs/dev/
