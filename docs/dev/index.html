@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"/>
+        <title>
+            Product LifeCycle Ontology Network (PLCO)
+        </title>
+        <style>
+            body {
+                max-width: 1000px;
+                min-width: 500px;
+                width: 70%;
+                margin: 20px auto;
+                font-family: sans-serif;
+                color: black;
+                background: white;
+                border: 1px solid #eee;
+            }
+    
+            ul, li {
+                font-size: 1.1em;
+                line-height: 1.4;
+            }
+            
+            a:link {
+                color: #00C;
+                background: transparent
+            }
+    
+            a:visited {
+                color: #609;
+                background: transparent
+            }
+            
+            a:active {
+                color: #C00;
+                background: transparent
+            }
+            
+            h1, h2 {
+                color: #005A9C;
+                background: white;
+                font-weight: normal;
+            }
+        
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        
+            #overview h1, #overview h2 {
+                text-align: center;
+            }
+            
+            #overview .img-div {
+                width: 70%;
+                margin: 50px auto;
+            }
+            
+            #overview img {
+                width: 100%;
+            }
+        
+            table {
+                width: 100%;
+                border: 1px solid black;
+                border-collapse: collapse;
+                margin-bottom: 30px;
+            }
+            
+            table tr:nth-child(1) th {
+                text-align: left;
+                border-bottom: 1px solid black;
+            }
+            
+            table th, table td {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+        
+            table tr:nth-child(even) td {
+                background-color: #efefef;
+            }
+            .col-1 { width: 50%; }
+            .col-2 { width: 30%; }
+            .col-3 { width: 40%; }             
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="overview">
+                <h1>Product LifeCycle Ontology Network (PLCO)</h1>
+                <p>
+                    The Product LifeCycle Ontology Network (PLCO) provides a shared vocabulary for representing information about product lifecycle in the form of a network of ontology modules.
+                </p>
+                <p>
+                    The figure below shows an overview of the topics covered. The lines between the boxes represent some common-sense relations between the topics, which are represented as formal relations within the actual modules, such as <code>owl:imports</code> or specific object properties connecting concepts inside the modules. 
+                </p>
+                <div class="img-div">
+                    <img src="images/overview_v0.1.png">
+                </div>
+            </div>
+
+            <div id="index">
+                <h1>Core Modules</h1>
+                <p>
+                    The set of core modules that are in this release of PLCO forms a set of generic reusable ontology building blocks and include  Actor, Process, Resource, and Observation.
+                    </ul>
+                </p>
+                <h2>Actor</h2>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/actorODP/0.1/index.html">actorODP</a>
+                                (<a href="modules/actorODP/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/actorODP/0.1/ontology.owl">owl</a>,
+                                <a href="modules/actorODP/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/actorODP/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/actorODP/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+
+                <h2>Process</h2>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/processODP/0.1/index.html">processODP</a>
+                                (<a href="modules/processODP/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/processODP/0.1/ontology.owl">owl</a>,
+                                <a href="modules/processODP/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/processODP/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/processODP/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+
+                <h2>Resource</h2>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/product/0.1/index.html">product</a>
+                                (<a href="modules/product/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/product/0.1/ontology.owl">owl</a>,
+                                <a href="modules/product/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/product/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/product/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/resourceODP/0.1/index.html">resourceODP</a>
+                                (<a href="modules/resourceODP/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/resourceODP/0.1/ontology.owl">owl</a>,
+                                <a href="modules/resourceODP/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/resourceODP/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/resourceODP/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+
+                <h2>Observation</h2>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/observation/0.1/index.html">observation</a>
+                                (<a href="modules/observation/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/observation/0.1/ontology.owl">owl</a>,
+                                <a href="modules/observation/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/observation/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/observation/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+
+                <h2>Supplementary</h2>
+                 <p>
+                    The following modules are supplemental to the core modules as shown in Figure 1.</ul>
+                </p>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/location/0.1/index.html">location</a>
+                                (<a href="modules/location/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/location/0.1/ontology.owl">owl</a>,
+                                <a href="modules/location/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/location/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/location/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+
+          
+
+
+
+
+                <h1>Use Case Ontologies</h1>
+                 <p>
+                   The use case ontologies reuse the core modules of PLCO and focus on representing use case data about products' lifecycle operations.</ul>
+                </p>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                </table>
+
+                <h1>Other Reused Ontologies</h1>
+                <p>The following ontologies are not included directly in PLCO, but are reused or referenced.</p>
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/qudt/2.1/index.html">qudt</a>
+                                (<a href="modules/qudt/2.1/ontology.ttl">ttl</a>,
+                                <a href="modules/qudt/2.1/ontology.owl">owl</a>,
+                                <a href="modules/qudt/2.1/ontology.nt">ntriple</a>,
+                                <a href="modules/qudt/2.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                2.1
+                            </td>
+                            <td>
+                                <a href="modules/qudt/2.1/index.html">html</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/qudtunit/2.1/index.html">qudtunit</a>
+                                (<a href="modules/qudtunit/2.1/ontology.ttl">ttl</a>,
+                                <a href="modules/qudtunit/2.1/ontology.owl">owl</a>,
+                                <a href="modules/qudtunit/2.1/ontology.nt">ntriple</a>,
+                                <a href="modules/qudtunit/2.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                2.1
+                            </td>
+                            <td>
+                                <a href="modules/qudtunit/2.1/index.html">html</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="modules/time/0.1/index.html">time</a>
+                                (<a href="modules/time/0.1/ontology.ttl">ttl</a>,
+                                <a href="modules/time/0.1/ontology.owl">owl</a>,
+                                <a href="modules/time/0.1/ontology.nt">ntriple</a>,
+                                <a href="modules/time/0.1/ontology.jsonld">json-ld</a>)
+                            </td>
+                            <td>
+                                0.1
+                            </td>
+                            <td>
+                                <a href="modules/time/0.1/index.html">html</a>
+                            </td>
+                        </tr>
+                </table>
+                <!--
+                <h1>Full Imported Version</h1>
+                <p>The following ontology file is the complete version of PLCO, including both core and supplementary modules.</p>
+
+                <table>
+                    <colgroup>
+                        <col class="col-1">
+                        <col class="col-2">
+                        <col class="col-3">
+                      </colgroup>
+                    <tr>
+                        <th>
+                            Ontology
+                        </th>
+                        <th>
+                            Version
+                        </th>
+                        <th>
+                            Docs
+                        </th>
+                    </tr>
+                </table>
+                -->
+
+            </div>
+        </main>
+    </body>
+</html>

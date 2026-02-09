@@ -1,0 +1,512 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://w3id.org/PLCO/ontology/actorODP", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/resourceODP", "http://w3id.org/PLCO/ontology/processODP" ],
+    "title" : {
+      "undefined" : "PLCO Ontology Network - Product Module"
+    },
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "version" : "0.1",
+    "author" : [ "Huanyu Li" ],
+    "description" : {
+      "undefined" : "A ODP module of the PLCO ontology network, defining aspects of the actor concept."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-02-05",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "plco-product",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/product",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "PLCO Ontology Network - Product Module",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/LiUSemWeb/PLCO",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#ResourceRelation",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceRelation",
+      "undefined" : "Resource Relation"
+    },
+    "comment" : {
+      "undefined" : "The relation involving the role of a certain actor with respect to a certain resource, e.g. an organisation or individual (actor) owning (role) a specific product (resource) at a specific point or period in time."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#Actor",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "Actor"
+    },
+    "comment" : {
+      "undefined" : "An agent able to act in the context of a circular value network, e.g. an organisation, person."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CollaborationParticipation",
+      "undefined" : "Collaboration Participation"
+    },
+    "comment" : {
+      "undefined" : "The relation involving the role of a certain actor with respect to a value network or a process in such a network, e.g. an organisation (actor) acting as the recycler (role) in a glass recycling value netowrk (network) at a specific point or period in time. Or an organisation (actor) acting as the dismantler (role) in a dismantling step of a building deconstruction process (process step) at a specific point or period in time."
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP/Process",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#Capability",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Capability",
+      "undefined" : "Capability"
+    },
+    "comment" : {
+      "undefined" : "Something that the actor is capable of doing, e.g. perfomring a certain role in a process, based on some properties, such as access to infrastructure, resources and know-how."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#Infrastructure",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Infrastructure",
+      "undefined" : "Infrastructure"
+    },
+    "comment" : {
+      "undefined" : "An infrastructure refers to facilities, services, or systems for participations to function."
+    },
+    "id" : "20"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "20" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP/Resource",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceParticipation",
+      "undefined" : "Resource Participation"
+    },
+    "comment" : {
+      "undefined" : "The generic relation representing the particpation of a resource in some relation. For example, it can be specialized to represent a reified version of an object or data property."
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#Role",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "comment" : {
+      "undefined" : "A role that an actor can take in a specific context. Applies both to roles in the context of resources, such as owner, manufacturer, reseller etc. of that resource, as well as roles in relation to a circular value network, such as recycler, dismantler, transporter etc., in relation to a material flow."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#Participation",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Participation",
+      "undefined" : "Participation"
+    },
+    "subClasses" : [ "0", "4", "13" ],
+    "comment" : {
+      "undefined" : "Represents the participation of objects in some situation."
+    },
+    "id" : "1"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participatingActor",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "participatingActor",
+      "undefined" : "participating actor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Holds the value of the actor involved in this participation relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participationEndTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "participationEndTime",
+      "undefined" : "participation end time"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The end of a time interval."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participationTimePoint",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "participationTimePoint",
+      "undefined" : "participation time point"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The point in time when something took place or was valid."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participantRole",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "participantRole",
+      "undefined" : "participant role"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Holds the value of the role of the participant in this participation relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participatingResource",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "participatingResource",
+      "undefined" : "participating resource"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "The resource that this participation relation relates to, i.e. for which the actor holds the specified role."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#capabilityOf",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "capabilityOf",
+      "undefined" : "capability of"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates to the actor holding the capability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#basedOnCapability",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "basedOnCapability",
+      "undefined" : "based on capability"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "An actor participates in a collaboration based on that it has some capability that is useful for the collaboration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "participatingInfrastructure",
+      "undefined" : "participating infrastructure"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Holds the value of the infrastructure involved in this participation relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participationStartTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "participationStartTime",
+      "undefined" : "participation start time"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The start of a time interval."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participationIn",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "participationIn",
+      "undefined" : "participation in"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The collaboration or process that this participation relates to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#capabilityProperty",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "capabilityProperty",
+      "undefined" : "capability property"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Relates some properties to the capability, such as the parameters of it, or the needed resources."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participatingObject",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "participatingObject",
+      "undefined" : "participating object"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Participating object in a resource participation. This is part of a resource participation that can be a directional relation, and the participating object is the end point of the relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/actorODP#participatingSubject",
+    "baseIri" : "http://w3id.org/PLCO/ontology/actorODP",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "participatingSubject",
+      "undefined" : "participating subject"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Participating subject in a resource participation. This is part of a resource participation that can be a directional relation, and the participating subject is the starting point of the relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  } ]
+}

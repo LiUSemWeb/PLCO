@@ -1,0 +1,315 @@
+<h2 id="crossreference" class="list">Cross-reference for PLCO Ontology Network - ProcessODP Module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PLCO Ontology Network - ProcessODP Module.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a></li>
+  <li><a href="#Event" title="http://w3id.org/PLCO/ontology/processODP#Event">Event</a></li>
+  <li><a href="#Process" title="http://w3id.org/PLCO/ontology/processODP#Process">Process</a></li>
+  <li><a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a></li>
+  <li><a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a></li>
+ </ul>
+ <div class="entity" id="Activity">
+  <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Activity</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasActivityDate" title="http://w3id.org/PLCO/ontology/processODP#hasActivityDate">had activity date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivityID" title="http://w3id.org/PLCO/ontology/processODP#hasActivityID">has activity ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivityType" title="http://w3id.org/PLCO/ontology/processODP#hasActivityType">has activity type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isPerformedOn" title="http://w3id.org/PLCO/ontology/processODP#isPerformedOn">is performed on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Event">
+  <h3>Event<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Event</p>
+  <div class="comment">
+   <span class="markdown">Something that happens within a given context or (short) timeframe.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+  </dl>
+ </div>
+ <div class="entity" id="Process">
+  <h3>Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Process</p>
+  <div class="comment">
+   <span class="markdown">Something that takes place over a (longer) period of time and changes some state of affairs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasInput" title="http://w3id.org/PLCO/ontology/processODP#hasInput">has input</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOutput" title="http://w3id.org/PLCO/ontology/processODP#hasOutput">has output</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Situation">
+  <h3>Situation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Situation</p>
+  <div class="comment">
+   <span class="markdown">A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TimeInterval">
+  <h3>Time Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#TimeInterval</p>
+  <div class="comment">
+   <span class="markdown">A temporal entity has a starting time and an ending time.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#endTime" title="http://w3id.org/PLCO/ontology/processODP#endTime">end time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startTime" title="http://w3id.org/PLCO/ontology/processODP#startTime">start time</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#duringTime" title="http://w3id.org/PLCO/ontology/processODP#duringTime">during time</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#duringTime" title="http://w3id.org/PLCO/ontology/processODP#duringTime">during time</a></li>
+  <li><a href="#hasInput" title="http://w3id.org/PLCO/ontology/processODP#hasInput">has input</a></li>
+  <li><a href="#hasOutput" title="http://w3id.org/PLCO/ontology/processODP#hasOutput">has output</a></li>
+  <li><a href="#isPerformedOn" title="http://w3id.org/PLCO/ontology/processODP#isPerformedOn">is performed on</a></li>
+  <li><a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a></li>
+ </ul>
+ <div class="entity" id="duringTime">
+  <h3>during time<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#duringTime</p>
+  <div class="comment">
+   <span class="markdown">The time interval during which something, e.g. a process or event, takes place.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasInput">
+  <h3>has input<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasInput</p>
+  <div class="comment">
+   <span class="markdown">The inputs to a process or event.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Process" title="http://w3id.org/PLCO/ontology/processODP#Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOutput">
+  <h3>has output<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasOutput</p>
+  <div class="comment">
+   <span class="markdown">The output of a process or event.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Process" title="http://w3id.org/PLCO/ontology/processODP#Process">Process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPerformedOn">
+  <h3>is performed on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#isPerformedOn</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://w3id.org/PLCO/ontology/resourceODP#Resource" target="_blank" title="http://w3id.org/PLCO/ontology/resourceODP#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSettingFor">
+  <h3>is the setting for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#isSettingFor</p>
+  <div class="comment">
+   <span class="markdown">The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#endTime" title="http://w3id.org/PLCO/ontology/processODP#endTime">end time</a></li>
+  <li><a href="#hasActivityDate" title="http://w3id.org/PLCO/ontology/processODP#hasActivityDate">had activity date</a></li>
+  <li><a href="#hasActivityID" title="http://w3id.org/PLCO/ontology/processODP#hasActivityID">has activity ID</a></li>
+  <li><a href="#hasActivityType" title="http://w3id.org/PLCO/ontology/processODP#hasActivityType">has activity type</a></li>
+  <li><a href="#startTime" title="http://w3id.org/PLCO/ontology/processODP#startTime">start time</a></li>
+ </ul>
+ <div class="entity" id="endTime">
+  <h3>end time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#endTime</p>
+  <div class="comment">
+   <span class="markdown">Represents the end time of a time interval.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasActivityDate">
+  <h3>had activity date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasActivityDate</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasActivityID">
+  <h3>has activity ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasActivityID</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasActivityType">
+  <h3>has activity type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasActivityType</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="startTime">
+  <h3>start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#startTime</p>
+  <div class="comment">
+   <span class="markdown">Represents the start time of a time interval.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

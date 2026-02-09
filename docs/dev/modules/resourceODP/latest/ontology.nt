@@ -1,0 +1,220 @@
+<http://w3id.org/PLCO/ontology/resourceODP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/resourceODP/0.1> .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/dc/terms/created> "2026-02-05" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/dc/terms/creator> "Huanyu Li" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/dc/terms/description> "A ODP of the PLCO ontology network, defining aspects of the resource concept." .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/dc/terms/title> "PLCO Ontology Network - resourceODP Module" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/vocab/vann/preferredNamespacePrefix> "plco-resourceODP" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/PLCO/ontology/resourceODP" .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LiUSemWeb/PLCO> .
+<http://w3id.org/PLCO/ontology/resourceODP> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#geoJSONLiteral
+<http://www.opengis.net/ont/geosparql#geoJSONLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject
+<http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects." .
+<http://w3id.org/PLCO/ontology/resourceODP#hasPhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "has physical object" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource can has specifc conditions." .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> <http://www.w3.org/2000/01/rdf-schema#label> "has resource condition" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource can has specifc properties." .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has resource property" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource can has specifc qualities." .
+<http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> <http://www.w3.org/2000/01/rdf-schema#label> "has resource quality" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#isAbout
+<http://w3id.org/PLCO/ontology/resourceODP#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/resourceODP#Information> .
+<http://w3id.org/PLCO/ontology/resourceODP#isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "Connecting the information to the object (physical, virtual, imaginary) that the information is about." .
+<http://w3id.org/PLCO/ontology/resourceODP#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf
+<http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP#Information> .
+<http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet." .
+<http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is realization of" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#Asset
+<http://w3id.org/PLCO/ontology/resourceODP#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#Asset> <http://www.w3.org/2000/01/rdf-schema#comment> "Asset is sth that is valuable and useful to be used in activities, or owned by actors." .
+<http://w3id.org/PLCO/ontology/resourceODP#Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#DigitalObject
+<http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital object, e.g. a computer file, that is located on some server, hard drive, or on the web. Most often the digital object is the realization of some piece of information." .
+<http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Digital object" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#Information
+<http://w3id.org/PLCO/ontology/resourceODP#Information> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#Information> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Asset> .
+<http://w3id.org/PLCO/ontology/resourceODP#Information> <http://www.w3.org/2000/01/rdf-schema#comment> "Information is an abstract concept that represents any kind of interpretations. For instance, information can be data generated by software systems or data used by people for communications." .
+<http://w3id.org/PLCO/ontology/resourceODP#Information> <http://www.w3.org/2000/01/rdf-schema#label> "Information" .
+<http://w3id.org/PLCO/ontology/resourceODP#Information> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://emmo.info/emmo#EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject
+<http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical object is a collection of matter." .
+<http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Physical object" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#Resource
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Asset> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceProperty> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Asset from which a solution is created or implemented. Depending on the context, reference to “resource” includes “raw material”, “feedstock”, “material” or “component”. Resource includes any energy type (e.g. the energy content or energy potential of materials). Note 4 to entry: Resources can be considered concerning both stocks and flows." .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "ISO 59004:2024 - 3.1.5 resource" .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of a resource." .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Condition" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The characteristics or attribuets of a resource." .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Property" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Resource quality is derived based on assessments of resources considering the conditions and properties." .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Quality" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

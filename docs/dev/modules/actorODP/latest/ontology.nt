@@ -1,0 +1,300 @@
+<http://w3id.org/PLCO/ontology/actorODP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/PLCO/ontology/actorODP> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/actorODP/0.1> .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/dc/terms/created> "2026-02-05" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/dc/terms/creator> "Huanyu Li" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/dc/terms/description> "A ODP module of the PLCO ontology network, defining aspects of the actor concept." .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/dc/terms/title> "PLCO Ontology Network - Product Module" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/vocab/vann/preferredNamespacePrefix> "plco-product" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/PLCO/ontology/product" .
+<http://w3id.org/PLCO/ontology/actorODP> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LiUSemWeb/PLCO> .
+<http://w3id.org/PLCO/ontology/actorODP> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gMonthYear
+<http://www.w3.org/2001/XMLSchema#gMonthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/actorODP#basedOnCapability
+<http://w3id.org/PLCO/ontology/actorODP#basedOnCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#basedOnCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> .
+<http://w3id.org/PLCO/ontology/actorODP#basedOnCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/actorODP#Capability> .
+<http://w3id.org/PLCO/ontology/actorODP#basedOnCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor participates in a collaboration based on that it has some capability that is useful for the collaboration." .
+<http://w3id.org/PLCO/ontology/actorODP#basedOnCapability> <http://www.w3.org/2000/01/rdf-schema#label> "based on capability" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#capabilityOf
+<http://w3id.org/PLCO/ontology/actorODP#capabilityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Capability> .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/actorODP#Infrastructure> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/actorODP#Actor> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates to the actor holding the capability." .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityOf> <http://www.w3.org/2000/01/rdf-schema#label> "capability of" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#capabilityProperty
+<http://w3id.org/PLCO/ontology/actorODP#capabilityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Capability> .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates some properties to the capability, such as the parameters of it, or the needed resources." .
+<http://w3id.org/PLCO/ontology/actorODP#capabilityProperty> <http://www.w3.org/2000/01/rdf-schema#label> "capability property" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participantRole
+<http://w3id.org/PLCO/ontology/actorODP#participantRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participantRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participantRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/actorODP#Role> .
+<http://w3id.org/PLCO/ontology/actorODP#participantRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Holds the value of the role of the participant in this participation relation." .
+<http://w3id.org/PLCO/ontology/actorODP#participantRole> <http://www.w3.org/2000/01/rdf-schema#label> "participant role" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participatingActor
+<http://w3id.org/PLCO/ontology/actorODP#participatingActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/actorODP#Actor> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Holds the value of the actor involved in this participation relation." .
+<http://w3id.org/PLCO/ontology/actorODP#participatingActor> <http://www.w3.org/2000/01/rdf-schema#label> "participating actor" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure
+<http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/actorODP#Infrastructure> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Holds the value of the infrastructure involved in this participation relation." .
+<http://w3id.org/PLCO/ontology/actorODP#participatingInfrastructure> <http://www.w3.org/2000/01/rdf-schema#label> "participating infrastructure" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participatingObject
+<http://w3id.org/PLCO/ontology/actorODP#participatingObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP/Resource> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Participating object in a resource participation. This is part of a resource participation that can be a directional relation, and the participating object is the end point of the relation." .
+<http://w3id.org/PLCO/ontology/actorODP#participatingObject> <http://www.w3.org/2000/01/rdf-schema#label> "participating object" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participatingResource
+<http://w3id.org/PLCO/ontology/actorODP#participatingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#ResourceRelation> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP/Resource> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The resource that this participation relation relates to, i.e. for which the actor holds the specified role." .
+<http://w3id.org/PLCO/ontology/actorODP#participatingResource> <http://www.w3.org/2000/01/rdf-schema#label> "participating resource" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participatingSubject
+<http://w3id.org/PLCO/ontology/actorODP#participatingSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/resourceODP/Resource> .
+<http://w3id.org/PLCO/ontology/actorODP#participatingSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Participating subject in a resource participation. This is part of a resource participation that can be a directional relation, and the participating subject is the starting point of the relation." .
+<http://w3id.org/PLCO/ontology/actorODP#participatingSubject> <http://www.w3.org/2000/01/rdf-schema#label> "participating subject" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participationIn
+<http://w3id.org/PLCO/ontology/actorODP#participationIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participationIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> .
+<http://w3id.org/PLCO/ontology/actorODP#participationIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/processODP/Process> .
+<http://w3id.org/PLCO/ontology/actorODP#participationIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The collaboration or process that this participation relates to." .
+<http://w3id.org/PLCO/ontology/actorODP#participationIn> <http://www.w3.org/2000/01/rdf-schema#label> "participation in" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participationEndTime
+<http://w3id.org/PLCO/ontology/actorODP#participationEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participationEndTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participationEndTime> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gYear> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gMonthYear> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#date> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://w3id.org/PLCO/ontology/actorODP#participationEndTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The end of a time interval." .
+<http://w3id.org/PLCO/ontology/actorODP#participationEndTime> <http://www.w3.org/2000/01/rdf-schema#label> "participation end time" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participationStartTime
+<http://w3id.org/PLCO/ontology/actorODP#participationStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participationStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participationStartTime> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gYear> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gMonthYear> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#date> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://w3id.org/PLCO/ontology/actorODP#participationStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The start of a time interval." .
+<http://w3id.org/PLCO/ontology/actorODP#participationStartTime> <http://www.w3.org/2000/01/rdf-schema#label> "participation start time" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#participationTimePoint
+<http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gYear> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#gMonthYear> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#date> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The point in time when something took place or was valid." .
+<http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> <http://www.w3.org/2000/01/rdf-schema#label> "participation time point" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/actorODP#Actor
+<http://w3id.org/PLCO/ontology/actorODP#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent able to act in the context of a circular value network, e.g. an organisation, person." .
+<http://w3id.org/PLCO/ontology/actorODP#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#Capability
+<http://w3id.org/PLCO/ontology/actorODP#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Capability> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that the actor is capable of doing, e.g. perfomring a certain role in a process, based on some properties, such as access to infrastructure, resources and know-how." .
+<http://w3id.org/PLCO/ontology/actorODP#Capability> <http://www.w3.org/2000/01/rdf-schema#label> "Capability" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation
+<http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation involving the role of a certain actor with respect to a value network or a process in such a network, e.g. an organisation (actor) acting as the recycler (role) in a glass recycling value netowrk (network) at a specific point or period in time. Or an organisation (actor) acting as the dismantler (role) in a dismantling step of a building deconstruction process (process step) at a specific point or period in time." .
+<http://w3id.org/PLCO/ontology/actorODP#CollaborationParticipation> <http://www.w3.org/2000/01/rdf-schema#label> "Collaboration Participation" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#Infrastructure
+<http://w3id.org/PLCO/ontology/actorODP#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Infrastructure> <http://www.w3.org/2000/01/rdf-schema#comment> "An infrastructure refers to facilities, services, or systems for participations to function." .
+<http://w3id.org/PLCO/ontology/actorODP#Infrastructure> <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#Participation
+<http://w3id.org/PLCO/ontology/actorODP#Participation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Participation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/actorODP#participationTimePoint> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/actorODP#participationStartTime> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Participation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the participation of objects in some situation." .
+<http://w3id.org/PLCO/ontology/actorODP#Participation> <http://www.w3.org/2000/01/rdf-schema#label> "Participation" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation
+<http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic relation representing the particpation of a resource in some relation. For example, it can be specialized to represent a reified version of an object or data property." .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceParticipation> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Participation" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#ResourceRelation
+<http://w3id.org/PLCO/ontology/actorODP#ResourceRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/actorODP#Participation> .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation involving the role of a certain actor with respect to a certain resource, e.g. an organisation or individual (actor) owning (role) a specific product (resource) at a specific point or period in time." .
+<http://w3id.org/PLCO/ontology/actorODP#ResourceRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Relation" .
+# 
+# http://w3id.org/PLCO/ontology/actorODP#Role
+<http://w3id.org/PLCO/ontology/actorODP#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/actorODP#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an actor can take in a specific context. Applies both to roles in the context of resources, such as owner, manufacturer, reseller etc. of that resource, as well as roles in relation to a circular value network, such as recycler, dismantler, transporter etc., in relation to a material flow." .
+<http://w3id.org/PLCO/ontology/actorODP#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
+# 
+# http://w3id.org/PLCO/ontology/processODP/Process
+<http://w3id.org/PLCO/ontology/processODP/Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP/Resource
+<http://w3id.org/PLCO/ontology/resourceODP/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

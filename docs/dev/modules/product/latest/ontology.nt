@@ -1,0 +1,221 @@
+<http://w3id.org/PLCO/ontology/product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/PLCO/ontology/product> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/product/0.1> .
+<http://w3id.org/PLCO/ontology/product> <http://www.w3.org/2002/07/owl#imports> <https://liusemweb.github.io/PLCO/modules/resourceODP/0.1/ontology.ttl> .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/dc/terms/created> "2026-02-05" .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/dc/terms/creator> "Huanyu Li" .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/dc/terms/description> "A module of the PLCO ontology network, defining aspects of the product concept." .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/dc/terms/title> "PLCO Ontology Network - Product Module" .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/vocab/vann/preferredNamespacePrefix> "plco-product" .
+<http://w3id.org/PLCO/ontology/product> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/PLCO/ontology/product" .
+<http://w3id.org/PLCO/ontology/product> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/LiUSemWeb/PLCO> .
+<http://w3id.org/PLCO/ontology/product> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/product#describes
+<http://w3id.org/PLCO/ontology/product#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/product#describes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> .
+<http://w3id.org/PLCO/ontology/product#describes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/PLCO/ontology/product#Product> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#describes> <http://www.w3.org/2000/01/rdf-schema#label> "describes" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasStateProperty
+<http://w3id.org/PLCO/ontology/product#hasStateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/product#hasStateProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#hasStateProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/product#StateProperty> .
+<http://w3id.org/PLCO/ontology/product#hasStateProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has state property" .
+# 
+# http://w3id.org/PLCO/ontology/product#isModelledBy
+<http://w3id.org/PLCO/ontology/product#isModelledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/product#isModelledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#isModelledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/product#Product> .
+<http://w3id.org/PLCO/ontology/product#isModelledBy> <http://www.w3.org/2000/01/rdf-schema#label> "is modelled by" .
+# 
+# http://w3id.org/PLCO/ontology/product#isStoredAt
+<http://w3id.org/PLCO/ontology/product#isStoredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/product#isStoredAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#isStoredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/location#Location> .
+<http://w3id.org/PLCO/ontology/product#isStoredAt> <http://www.w3.org/2000/01/rdf-schema#label> "is stored at" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/product#hadDesignDescription
+<http://w3id.org/PLCO/ontology/product#hadDesignDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hadDesignDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> .
+<http://w3id.org/PLCO/ontology/product#hadDesignDescription> <http://www.w3.org/2000/01/rdf-schema#label> "had design description" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasApplianceType
+<http://w3id.org/PLCO/ontology/product#hasApplianceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasApplianceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#hasApplianceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasApplianceType> <http://www.w3.org/2000/01/rdf-schema#label> "has appliance type" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasBrand
+<http://w3id.org/PLCO/ontology/product#hasBrand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasBrand> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#hasBrand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasBrand> <http://www.w3.org/2000/01/rdf-schema#label> "has brand" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasDesignID
+<http://w3id.org/PLCO/ontology/product#hasDesignID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasDesignID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> .
+<http://w3id.org/PLCO/ontology/product#hasDesignID> <http://www.w3.org/2000/01/rdf-schema#label> "has design id" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasDocumentID
+<http://w3id.org/PLCO/ontology/product#hasDocumentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasDocumentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#Document> .
+<http://w3id.org/PLCO/ontology/product#hasDocumentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasDocumentID> <http://www.w3.org/2000/01/rdf-schema#label> "has document id" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasFileName
+<http://w3id.org/PLCO/ontology/product#hasFileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasFileName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#Document> .
+<http://w3id.org/PLCO/ontology/product#hasFileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasFileName> <http://www.w3.org/2000/01/rdf-schema#label> "has file name" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasFileType
+<http://w3id.org/PLCO/ontology/product#hasFileType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasFileType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#Document> .
+<http://w3id.org/PLCO/ontology/product#hasFileType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasFileType> <http://www.w3.org/2000/01/rdf-schema#label> "has file type" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasStatePropertyValue
+<http://w3id.org/PLCO/ontology/product#hasStatePropertyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasStatePropertyValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#StateProperty> .
+<http://w3id.org/PLCO/ontology/product#hasStatePropertyValue> <http://www.w3.org/2000/01/rdf-schema#label> "has state property value" .
+# 
+# http://w3id.org/PLCO/ontology/product#hasVersionNumber
+<http://w3id.org/PLCO/ontology/product#hasVersionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/product#hasVersionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/product#ProductItem> .
+<http://w3id.org/PLCO/ontology/product#hasVersionNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/PLCO/ontology/product#hasVersionNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has version number" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/PLCO/ontology/location#Location
+<http://w3id.org/PLCO/ontology/location#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/PLCO/ontology/product#Document
+<http://w3id.org/PLCO/ontology/product#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> .
+<http://w3id.org/PLCO/ontology/resourceODP#DigitalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+# 
+# http://w3id.org/PLCO/ontology/product#Product
+<http://w3id.org/PLCO/ontology/product#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#Product> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstarct concept represent a product in general." .
+<http://w3id.org/PLCO/ontology/product#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# 
+# http://w3id.org/PLCO/ontology/product#ProductDesignSpecification
+<http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#Resource> .
+<http://w3id.org/PLCO/ontology/product#ProductDesignSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Product Design Specification" .
+# 
+# http://w3id.org/PLCO/ontology/product#ProductItem
+<http://w3id.org/PLCO/ontology/product#ProductItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#ProductItem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> .
+<http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#ProductItem> <http://www.w3.org/2000/01/rdf-schema#label> "Product Item" .
+# 
+# http://w3id.org/PLCO/ontology/product#StateProperty
+<http://w3id.org/PLCO/ontology/product#StateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#StateProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> .
+<http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/product#StateProperty> <http://www.w3.org/2000/01/rdf-schema#label> "State Property" .
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#DigitalObject
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#Resource
+# 
+# http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

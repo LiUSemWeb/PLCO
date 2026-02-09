@@ -1,0 +1,301 @@
+<h2 id="crossreference" class="list">Cross-reference for PLCO Ontology Network - Location Module classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PLCO Ontology Network - Location Module.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a></li>
+  <li><a href="#Location" title="http://w3id.org/PLCO/ontology/location#Location">Location</a></li>
+ </ul>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#Geometry">
+  <h3>Geometry<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Geometry</p>
+  <div class="comment">
+   <span class="markdown">A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Location" title="http://w3id.org/PLCO/ontology/location#Location">Location</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.opengis.net/ont/geosparql#asGML" title="http://www.opengis.net/ont/geosparql#asGML">as GML</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.opengis.net/ont/geosparql#asGeoJSON" title="http://www.opengis.net/ont/geosparql#asGeoJSON">as GeoJSON</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">as WKT</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Location">
+  <h3>Location<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#Location</p>
+  <div class="comment">
+   <span class="markdown">From geography perspecive, a location represents a region which can be geometry point, line or area on Earth.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://w3id.org/PLCO/ontology/location#hasCountry">has country</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasLocation" title="http://w3id.org/PLCO/ontology/location#hasLocation">has location</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasLocation" title="http://w3id.org/PLCO/ontology/location#hasLocation">has location</a></li>
+ </ul>
+ <div class="entity" id="hasLocation">
+  <h3>has location<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasLocation</p>
+  <div class="comment">
+   <span class="markdown">Represents the location of an actor or resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Location" title="http://w3id.org/PLCO/ontology/location#Location">Location</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.opengis.net/ont/geosparql#asGeoJSON" title="http://www.opengis.net/ont/geosparql#asGeoJSON">as GeoJSON</a></li>
+  <li><a href="#http://www.opengis.net/ont/geosparql#asGML" title="http://www.opengis.net/ont/geosparql#asGML">as GML</a></li>
+  <li><a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">as WKT</a></li>
+  <li><a href="#hasCity" title="http://w3id.org/PLCO/ontology/location#hasCity">has city</a></li>
+  <li><a href="#hasCountry" title="http://w3id.org/PLCO/ontology/location#hasCountry">has country</a></li>
+  <li><a href="#hasCountryCode" title="http://w3id.org/PLCO/ontology/location#hasCountryCode">has country code</a></li>
+  <li><a href="#hasGlobalLocationNumber" title="http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber">has global location number</a></li>
+  <li><a href="#hasPostalCode" title="http://w3id.org/PLCO/ontology/location#hasPostalCode">has postal code</a></li>
+  <li><a href="#hasStreetAddress" title="http://w3id.org/PLCO/ontology/location#hasStreetAddress">has street address</a></li>
+ </ul>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#asGeoJSON">
+  <h3>as GeoJSON<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#asGeoJSON</p>
+  <div class="comment">
+   <span class="markdown">The GeoJSON serialization of a Geometry.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal">http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#geoJSONLiteral" target="_blank" title="http://www.opengis.net/ont/geosparql#geoJSONLiteral">geo J S O N Literal</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#asGML">
+  <h3>as GML<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#asGML</p>
+  <div class="comment">
+   <span class="markdown">The GML serialization of a Geometry.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal">http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#gmlLiteral" target="_blank" title="http://www.opengis.net/ont/geosparql#gmlLiteral">gml Literal</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#asWKT">
+  <h3>as WKT<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#asWKT</p>
+  <div class="comment">
+   <span class="markdown">The WKT serialization of a Geometry.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal">http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#wktLiteral" target="_blank" title="http://www.opengis.net/ont/geosparql#wktLiteral">wkt Literal</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCity">
+  <h3>has city<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasCity</p>
+  <div class="comment">
+   <span class="markdown">Represents the name of a city.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCountry">
+  <h3>has country<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasCountry</p>
+  <div class="comment">
+   <span class="markdown">Represents the name of a country.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Location" title="http://w3id.org/PLCO/ontology/location#Location">Location</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCountryCode">
+  <h3>has country code<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasCountryCode</p>
+  <div class="comment">
+   <span class="markdown">Represents the code of a country's name according to ISO 3166-1.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasGlobalLocationNumber">
+  <h3>has global location number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber</p>
+  <div class="comment">
+   <span class="markdown">The Global Location Number (GLN) is part of the GS1 systems of standards.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPostalCode">
+  <h3>has postal code<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasPostalCode</p>
+  <div class="comment">
+   <span class="markdown">Represent postal code</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasStreetAddress">
+  <h3>has street address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/location#hasStreetAddress</p>
+  <div class="comment">
+   <span class="markdown">Represents address of a street, including e.g., street number and name.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
