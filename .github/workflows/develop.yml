@@ -127,6 +127,8 @@ jobs:
       
       - name: Commit and push to main
         run: |
+          cp -r docs/dev /tmp/dev-docs-temp
+          
           git checkout main
           # Restore the newly generated docs
           rm -rf docs/dev
