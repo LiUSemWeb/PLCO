@@ -37,16 +37,16 @@
         "value" : "plco-location",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/PLCO/ontology/location",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -323,7 +323,7 @@
       "IRI-based" : "long"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "7"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/location#hasGlobalLocationNumber",
@@ -375,7 +375,7 @@
       "IRI-based" : "asWKT"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/location#hasCountryCode",
@@ -407,7 +407,7 @@
       "IRI-based" : "lat"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "19"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
@@ -437,7 +437,7 @@
       "IRI-based" : "asGeoJSON"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "21"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#asGML",
@@ -467,7 +467,7 @@
       "IRI-based" : "asGML"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "22"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/location#hasStreetAddress",
@@ -500,7 +500,7 @@
   }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/location#hasCountry",

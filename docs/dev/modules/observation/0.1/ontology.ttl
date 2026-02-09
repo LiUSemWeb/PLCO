@@ -149,14 +149,6 @@
                 rdfs:label "observes during" .
 
 
-###  http://w3id.org/PLCO/ontology/time#hasTimeStamp
-<http://w3id.org/PLCO/ontology/time#hasTimeStamp> rdf:type owl:DatatypeProperty .
-
-
-###  http://www.w3.org/2006/time#hasXSDDuration
-<http://www.w3.org/2006/time#hasXSDDuration> rdf:type owl:DatatypeProperty .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -191,15 +183,15 @@
                   rdfs:label "Observation Value" .
 
 
-###  http://w3id.org/PLCO/ontology/resourceODP#StateProperty
-<http://w3id.org/PLCO/ontology/resourceODP#StateProperty> rdf:type owl:Class .
+###  http://w3id.org/PLCO/ontology/product#StateProperty
+<http://w3id.org/PLCO/ontology/product#StateProperty> rdf:type owl:Class .
 
 
 #################################################################
 #    General axioms
 #################################################################
 
-[ owl:intersectionOf ( <http://w3id.org/PLCO/ontology/resourceODP#StateProperty>
+[ owl:intersectionOf ( <http://w3id.org/PLCO/ontology/product#StateProperty>
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :isObservedBy ;
                          owl:someValuesFrom :Observation

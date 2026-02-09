@@ -265,7 +265,7 @@
       "undefined" : "numeric value"
     },
     "domain" : "6",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "5"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",

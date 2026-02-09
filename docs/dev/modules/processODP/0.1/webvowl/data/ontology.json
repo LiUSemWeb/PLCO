@@ -37,16 +37,16 @@
         "value" : "plco-processODP",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/processODP",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/processODP",
         "type" : "label"
       } ],
       "title" : [ {
@@ -101,10 +101,10 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "7",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -209,6 +209,15 @@
     },
     "id" : "21"
   }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Activity",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "id" : "17"
+  }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#Process",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
     "instances" : 0,
@@ -220,15 +229,6 @@
       "en" : "Something that takes place over a (longer) period of time and changes some state of affairs."
     },
     "id" : "7"
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#Activity",
-    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Activity",
-      "undefined" : "Activity"
-    },
-    "id" : "17"
   } ],
   "property" : [ {
     "id" : "3",
