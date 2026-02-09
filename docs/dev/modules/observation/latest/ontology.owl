@@ -248,6 +248,7 @@
     <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/observation#observesDuring">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#hasXSDDuration"/>
         <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/observation#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
         <rdfs:label>observes during</rdfs:label>
     </owl:DatatypeProperty>
     

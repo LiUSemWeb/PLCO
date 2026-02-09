@@ -81,10 +81,10 @@
     "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
-    "type" : "owl:Thing"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "17",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "18",
     "type" : "rdfs:Literal"
@@ -139,39 +139,39 @@
     },
     "id" : "2"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "8",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#duration",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "12",
+    "id" : "15",
     "label" : {
       "IRI-based" : "duration"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "16",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "16",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "17",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -368,11 +368,11 @@
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/time#hasTimeStamp",
     "baseIri" : "http://w3id.org/PLCO/ontology/time",
-    "range" : "8",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasTimeStamp"
     },
-    "domain" : "16",
+    "domain" : "17",
     "attributes" : [ "datatype", "external" ],
     "id" : "19"
   }, {
@@ -388,7 +388,7 @@
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "12",
+    "range" : "15",
     "label" : {
       "IRI-based" : "hasXSDDuration"
     },
@@ -398,7 +398,7 @@
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesDuring",
     "baseIri" : "http://w3id.org/PLCO/ontology/observation",
-    "range" : "17",
+    "range" : "8",
     "label" : {
       "IRI-based" : "observesDuring",
       "undefined" : "observes during"
@@ -420,7 +420,7 @@
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "15",
+    "range" : "16",
     "label" : {
       "IRI-based" : "inXSDDateTimeStamp"
     },

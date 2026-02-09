@@ -242,6 +242,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "observes during"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2006/time#hasXSDDuration"
   } ]
