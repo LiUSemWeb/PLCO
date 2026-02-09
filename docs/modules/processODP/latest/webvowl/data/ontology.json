@@ -37,16 +37,16 @@
         "value" : "plco-processODP",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/PLCO/ontology/processODP",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -329,6 +329,17 @@
     "attributes" : [ "object" ],
     "id" : "18"
   }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasActivityType",
+      "undefined" : "has activity type"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
     "range" : "9",
@@ -340,17 +351,6 @@
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "19"
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",
-    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "hasActivityType",
-      "undefined" : "has activity type"
-    },
-    "domain" : "17",
     "attributes" : [ "datatype" ],
     "id" : "20"
   }, {

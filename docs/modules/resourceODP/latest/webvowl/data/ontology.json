@@ -37,16 +37,16 @@
         "value" : "plco-resourceODP",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/resourceODP",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/resourceODP",
         "type" : "label"
       } ],
       "title" : [ {
@@ -74,10 +74,10 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -151,19 +151,6 @@
     "id" : "4",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject",
-    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PhysicalObject",
-      "undefined" : "Physical object"
-    },
-    "comment" : {
-      "undefined" : "A physical object is a collection of matter."
-    },
-    "id" : "13",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#DigitalObject",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "instances" : 0,
@@ -175,6 +162,19 @@
       "undefined" : "A digital object, e.g. a computer file, that is located on some server, hard drive, or on the web. Most often the digital object is the realization of some piece of information."
     },
     "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#PhysicalObject",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalObject",
+      "undefined" : "Physical object"
+    },
+    "comment" : {
+      "undefined" : "A physical object is a collection of matter."
+    },
+    "id" : "13",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -276,12 +276,12 @@
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "5",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf",
@@ -300,7 +300,7 @@
   }, {
     "range" : "1",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isAbout",
@@ -319,7 +319,7 @@
   }, {
     "range" : "1",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition",

@@ -146,6 +146,7 @@
 :observesDuring rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <http://www.w3.org/2006/time#hasXSDDuration> ;
                 rdfs:domain :Observation ;
+                rdfs:range xsd:duration ;
                 rdfs:label "observes during" .
 
 
