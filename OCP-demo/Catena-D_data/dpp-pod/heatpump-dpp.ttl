@@ -1,0 +1,24 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix actorODP: <http://w3id.org/CEON/ontology/actorODP/> .
+@prefix dppODP: <http://w3id.org/dppo/ontology/dpp-odp/> .
+
+
+
+ex:DPPOwner1 a actorODP:Actor ;
+  rdfs:label "DPPOwner1" .
+
+
+<http://example.com/heatpump_1_sensor1> a dppODP:Component ;
+    rdfs:comment "Temperature Sensor" .
+<http://example.com/heatpump_1_sensor2> a dppODP:Component ;
+    rdfs:comment "Pressure Sensor" .
+
+<http://example.com/dpp-1734134409233> a dppODP:DPP ;
+    dppODP:owner ex:DPPOwner1 ;
+    dppODP:describes <http://example.com/heatpump_1> .
+
+<http://example.com/heatpump_1> a dppODP:Product ;
+    dppODP:hasPart <http://example.com/heatpump_1_sensor1>, <http://example.com/heatpump_1_sensor2> .

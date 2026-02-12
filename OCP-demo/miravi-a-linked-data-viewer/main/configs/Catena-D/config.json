@@ -1,0 +1,161 @@
+{
+  "title": "Catena-D Test Example",
+  "logoLocation": "images/IDLab-logo.png",
+  "logoRedirectURL": "https://liu.se",
+  "queryFolder": "queries",
+  "showMilliseconds": false,
+  "defaultIDP": "",
+  "introductionText": "Please select a query from the menu on the left.",
+  "queryGroups": [
+    {
+      "id": "gqx",
+      "name": "Generic query examples",
+      "icon": "ListAltIcon"
+    },
+    {
+      "id": "observation",
+      "name": "Observation query examples",
+      "icon": "TuneIcon"
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance query examples",
+      "icon": "FactoryIcon"
+    },
+    {
+      "id": "dpp",
+      "name": "DPP query examples",
+      "icon": "EditNoteIcon"
+    },
+    {
+      "id": "integrated_query",
+      "name": "Integrated query examples",
+      "icon": "DatasetLinkedIcon"
+    }
+
+  ],
+  "queries": [
+    {
+      "id": "100",
+      "queryGroupId": "gqx",
+      "queryLocation": "get-all.rq",
+      "name": "Get All Records",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl",
+          "http://localhost:3000/maintenance-pod/heatpump-maintenance.ttl",
+          "http://localhost:3000/dpp-pod/heatpump-dpp.ttl"
+        ]
+      }
+    },
+    {
+      "id": "101",
+      "queryGroupId": "observation",
+      "queryLocation": "get-all.rq",
+      "name": "Get All Observation Records",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl"
+        ]
+      }
+    },
+    {
+      "id": "102",
+      "queryGroupId": "maintenance",
+      "queryLocation": "get-all.rq",
+      "name": "Get All Maintenance Records",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/maintenance-pod/heatpump-maintenance.ttl"
+        ]
+      }
+    },
+    {
+      "id": "103",
+      "queryGroupId": "dpp",
+      "queryLocation": "get-all.rq",
+      "name": "Get All DPP Records",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/dpp-pod/heatpump-dpp.ttl"
+        ]
+      }
+    },
+    {
+      "id": "104",
+      "queryGroupId": "integrated_query",
+      "queryLocation": "integrated-query-1.rq",
+      "name": "Check Maintenance History",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl",
+          "http://localhost:3000/maintenance-pod/heatpump-maintenance.ttl"
+        ]
+      }
+    },
+    {
+      "id": "105",
+      "queryGroupId": "integrated_query",
+      "queryLocation": "integrated-query-2.rq",
+      "name": "Check Heat Pump DPP",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl",
+          "http://localhost:3000/dpp-pod/heatpump-dpp.ttl"
+        ]
+      }
+    },
+    {
+      "id": "106",
+      "queryGroupId": "observation",
+      "queryLocation": "get-total-energy-consumption.rq",
+      "name": "Get Total Energy Consumption of a Heat Pump",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl"
+        ]
+      }
+    },
+    {
+      "id": "107",
+      "queryGroupId": "maintenance",
+      "queryLocation": "get-maintainer-activity.rq",
+      "name": "Get Maintainer Activities",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/maintenance-pod/heatpump-maintenance.ttl"
+        ]
+      }
+    },
+    {
+      "id": "108",
+      "queryGroupId": "dpp",
+      "queryLocation": "get-product-dpp.rq",
+      "name": "Get Product DPPs",
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/dpp-pod/heatpump-dpp.ttl"
+        ]
+      }
+    },
+    {
+      "id": "109",
+      "queryGroupId": "observation",
+      "queryLocation": "get-heatpump-location.rq",
+      "name": "What is the location of a given heat pump?",
+      "variables": {
+        "heatpump": [
+          "<http://example.com/heatpump_1>",
+          "<http://example.com/heatpump_2>",
+          "<http://example.com/heatpump_3>"
+        ]
+      },
+      "comunicaContext": {
+        "sources": [
+          "http://localhost:3000/bosch-pod/heatpump-observation.ttl"
+        ],
+        "lenient": true
+      }
+    }
+  ]
+}

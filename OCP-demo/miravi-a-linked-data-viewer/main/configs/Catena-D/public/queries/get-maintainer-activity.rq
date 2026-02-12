@@ -1,0 +1,17 @@
+prefix ex: <http://example.org/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix actorODP: <http://w3id.org/CEON/ontology/actorODP/> 
+prefix dppODP: <http://w3id.org/dppo/ontology/dpp-odp/> 
+prefix resourceODP: <http://w3id.org/CEON/ontology/resourceODP/> 
+prefix maintenance: <http://example.org/maintenance/> 
+prefix plcs: <http://www.plcs.org/plcslib/plcslib/data/PLCS/concept_model/> 
+
+SELECT ?person ?service ?resource ?time WHERE {
+ ?activity a maintenance:MaintenanceActivity;
+           maintenance:maintainedOn ?resource;
+   		   maintenance:maintainedBy ?person;
+    	   maintenance:maintainTime ?time;
+           maintenance:maintainService ?service .
+}
+Order By ?time

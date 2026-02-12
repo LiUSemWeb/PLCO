@@ -1,0 +1,58 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix resourceODP: <http://w3id.org/CEON/ontology/resourceODP/> .
+@prefix actorODP: <http://w3id.org/CEON/ontology/actorODP/> .
+@prefix maintenance: <http://example.org/maintenance/> .
+
+
+ex:MaintainerCompany1 a actorODP:Actor;
+  rdfs:label "MaintainerCompany1".
+
+ex:Person1 a actorODP:Actor;
+  rdfs:label "Person1".
+
+ex:Person2 a actorODP:Actor;
+  rdfs:label "Person2".
+
+
+
+ex:maintenance_activity_1 a maintenance:MaintenanceActivity;
+    maintenance:maintainedOn <http://example.com/heatpump_1>;
+    maintenance:maintainedBy ex:Person1;
+    maintenance:maintainTime "2023-11-27";
+    maintenance:maintainService maintenance:Check_All_Ducts, maintenance:Change_Filters .
+
+ex:maintenance_activity_2 a maintenance:MaintenanceActivity;
+    maintenance:maintainedOn <http://example.com/heatpump_1>;
+    maintenance:maintainedBy ex:Person2;
+    maintenance:maintainTime "2024-11-30";
+    maintenance:maintainService maintenance:Change_Filters .
+
+ex:maintenance_activity_3 a maintenance:MaintenanceActivity;
+    maintenance:maintainedOn <http://example.com/heatpump_1>;
+    maintenance:maintainedBy ex:Person1;
+    maintenance:maintainTime "2025-11-26";
+    maintenance:maintainService maintenance:Check_All_Ducts.
+
+ex:maintenance_activity_4 a maintenance:MaintenanceActivity;
+    maintenance:maintainedOn <http://example.com/heatpump_2>;
+    maintenance:maintainedBy ex:Person2;
+    maintenance:maintainTime "2024-05-26";
+    maintenance:maintainService maintenance:Check_All_Ducts.
+
+ex:maintenance_activity_5 a maintenance:MaintenanceActivity;
+    maintenance:maintainedOn <http://example.com/heatpump_2>;
+    maintenance:maintainedBy ex:Person3;
+    maintenance:maintainTime "2025-05-21";
+    maintenance:maintainService maintenance:Change_Filters.
+
+
+
+<http://example.com/heatpump_1> a resourceODP:Resource;
+    maintenance:ownedBy ex:Bosch .
+
+
+<http://example.com/heatpump_2> a resourceODP:Resource;
+    maintenance:ownedBy ex:Bosch .

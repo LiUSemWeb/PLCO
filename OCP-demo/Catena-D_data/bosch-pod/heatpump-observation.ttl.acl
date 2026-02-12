@@ -1,0 +1,11 @@
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<#owner> a acl:Authorization;
+    acl:agent <http://localhost:3000/bosch-pod/profile/card#me>;
+    acl:mode acl:Read, acl:Write, acl:Control;
+    acl:accessTo <./heatpump-observation.ttl>.
+<#admin> a acl:Authorization;
+    acl:agent <http://localhost:3000/bosch-pod/profile/card#me>;
+    acl:mode acl:Read;
+    acl:accessTo <./heatpump-observation.ttl>.

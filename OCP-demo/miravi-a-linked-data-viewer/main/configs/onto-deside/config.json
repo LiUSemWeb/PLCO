@@ -1,0 +1,938 @@
+{
+  "title": "Query the Open Circularity Platform (Onto-DESIDE demo: all data is dummy data)",
+  "logoLocation": "images/IDLab-logo.png",
+  "logoRedirectURL": "https://idlab.technology/",
+  "queryFolder": "queries",
+  "showMilliseconds": false,
+  "defaultIDP": "https://onto-deside.ilabt.imec.be/css12/",
+  "introductionText": "Please log in as the appropriate actor and select a query from the menu on the left.",
+  "queryGroups": [
+    {
+      "id": "gqx",
+      "name": "Generic query examples",
+      "icon": "InfoIcon"
+    },
+    {
+      "id": "constr",
+      "name": "Construction use case",
+      "icon": "ConstructionIcon"
+    },
+    {
+      "id": "txtl",
+      "name": "Textile use case",
+      "icon": "CheckroomIcon"
+    },
+    {
+      "id": "txtlext",
+      "name": "Extended textile use case",
+      "icon": "CheckroomIcon"
+    },
+    {
+      "id": "evaluation-construction",
+      "name": "Evaluation June 2024 - Construction",
+      "icon": "ConstructionIcon"
+    },
+    {
+      "id": "evaluation-electronics",
+      "name": "Evaluation June 2024 - Electronics",
+      "icon": "ElectricBoltIcon"
+    },
+    {
+      "id": "evaluation-textile",
+      "name": "Evaluation June 2024 - Textile",
+      "icon": "CheckroomIcon"
+    },
+    {
+      "id": "cross-domain-evaluation",
+      "name": "Cross-domain evaluation 2025",
+      "icon": "CheckroomIcon"
+    }
+  ],
+  "queries": [
+    {
+      "id": "101",
+      "queryGroupId": "constr",
+      "queryLocation": "c-lindner-group-products.rq",
+      "name": "Query Lindner Group's products",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/products.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "102",
+      "queryGroupId": "constr",
+      "queryLocation": "c-lindner-group-products-details.rq",
+      "name": "Query Lindner Group's products details",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/products.ttl",
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/materials.ttl",
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/boms.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "103",
+      "queryGroupId": "constr",
+      "queryLocation": "c-materials-of-product.rq",
+      "name": "What are the materials of a given product?",
+      "variables": {
+        "product": [
+          "<https://www.example.com/data/product-0x01>",
+          "<https://www.example.com/data/product-0x02>",
+          "<https://www.example.com/data/product-0x03>",
+          "<https://www.example.com/data/product-0x04>",
+          "<https://www.example.com/data/product-0x05>"
+        ]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/products.ttl",
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/materials.ttl",
+          "https://onto-deside.ilabt.imec.be/css1/lindner-group/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css2/building-owner/data/dt/out/buildings.ttl",
+          "https://onto-deside.ilabt.imec.be/css3/building-owner2/data/dt/out/buildings.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "104",
+      "queryGroupId": "constr",
+      "queryLocation": "c-tiles-of-buildings.rq",
+      "name": "Which tiles are present in buildings?",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css2/building-owner/data/dt/out/buildings.ttl",
+          "https://onto-deside.ilabt.imec.be/css3/building-owner2/data/dt/out/buildings.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "105",
+      "queryGroupId": "constr",
+      "queryLocation": "c-tiles-of-building.rq",
+      "name": "What are the tiles of a given building?",
+      "variables": {
+        "building": [
+          "<https://www.example.com/data/building-B0>",
+          "<https://www.example.com/data/building-fsml88>"
+        ]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css2/building-owner/data/dt/out/buildings.ttl",
+          "https://onto-deside.ilabt.imec.be/css3/building-owner2/data/dt/out/buildings.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "106",
+      "queryGroupId": "constr",
+      "queryLocation": "c-tiles-of-building-with-address.rq",
+      "name": "What are the tiles of a building with a given address?",
+      "variables": {
+        "address": ["\"88 Fairview Street Mount Laurel, NJ 08054\""]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css2/building-owner/data/dt/out/buildings.ttl",
+          "https://onto-deside.ilabt.imec.be/css3/building-owner2/data/dt/out/buildings.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "107",
+      "queryGroupId": "constr",
+      "queryLocation": "c-ragn-sells-services.rq",
+      "name": "Which services does Ragn-Sells provide?",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css4/ragn-sells/data/dt/out/services.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "108",
+      "queryGroupId": "constr",
+      "queryLocation": "c-ragn-sells-wastestreams.rq",
+      "name": "Which waste streams does Ragn-Sells accept?",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css4/ragn-sells/data/dt/out/services.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "201",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-texon-components.rq",
+      "name": "Query Texon's components",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "202",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-texon-component-materials.rq",
+      "name": "Query Texon's components and their materials",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "203",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-texon-average-recycled-content-of-components.rq",
+      "name": "What is the average recycled content (weight percentage) of Texon's components?",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "204",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-manufacturer-products.rq",
+      "name": "Query Manufacturer's products",
+      "comunicaContext": {
+        "sources": ["https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/products.ttl"],
+        "lenient": true
+      }
+    },
+    {
+      "id": "205",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-manufacturer-product-components.rq",
+      "name": "Query Manufacturer's products and their components",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/products.ttl",
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "206",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-manufacturer-average-recycled-content-of-products.rq",
+      "name": "What is the average recycled content (weight percentage) of Manufacturer's products?",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/products.ttl",
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "207",
+      "queryGroupId": "txtl",
+      "queryLocation": "tx1-brand-recycled-content-of-product.rq",
+      "name": "What is the recycled content (weight percentage) of a given product?",
+      "variables": {
+        "product": [
+          "<https://www.example.com/textile-data/product-p01>",
+          "<https://www.example.com/textile-data/product-p02>"
+        ]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/products.ttl",
+          "https://onto-deside.ilabt.imec.be/css6/manufacturer/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "301",
+      "queryGroupId": "txtlext",
+      "queryLocation": "tx2-products.rq",
+      "name": "Products",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_1",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_2",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_3"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "302",
+      "queryGroupId": "txtlext",
+      "queryLocation": "tx2-product-datasheet-variables.rq",
+      "name": "Product datasheets",
+      "variables": {
+        "product": [
+          "<http://example.com/product/texon_uid-product1>",
+          "<http://example.com/product/texon_uid-product2>",
+          "<http://example.com/product/texon_uid-product3>",
+          "<http://example.com/product/texon_uid-product4>"
+        ]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_1",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_2",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_3"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "303",
+      "queryGroupId": "txtlext",
+      "queryLocation": "tx2-water-property.rq",
+      "name": "Water properties",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_1",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_2",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_3"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "304",
+      "queryGroupId": "txtlext",
+      "queryLocation": "tx2-design-for-reuse.rq",
+      "name": "Design for reuse",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_1",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_2",
+          "https://onto-deside.ilabt.imec.be/css5/texon/ceon/manuf1_3"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "420",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "electronics_products.rq",
+      "name": "Overview",
+      "description": "All products with the data points selected for this evaluation",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "421",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "electronics_resilience.rq",
+      "name": "Resilience of the supply chain of a product",
+      "description": "How resilient is the supply chain of a product, based on the origin of the materials?",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/electronics_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "422",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "electronics_REACH.rq",
+      "name": "REACH compliance of product components",
+      "description": "Is my product REACH compliant?",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/electronics_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "423",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "electronics_rare_earth.rq",
+      "name": "Rare Earth content on product components",
+      "description": "Does my product contain rare earth materials?",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/electronics_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "424",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "electronics_recycled.rq",
+      "name": "Recycled content of product components",
+      "description": "Does my product contain recycled materials?",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/electronics_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "426",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "spo.rq",
+      "name": "All accessible data",
+      "description": "All data accessible for the logged in user",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "427",
+      "queryGroupId": "evaluation-electronics",
+      "queryLocation": "sourceQueries/seeAlso.rq",
+      "name": "Sources in electronics network",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/electronics_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "430",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "spo.rq",
+      "name": "All accessible data",
+      "description": "All data accessible for the logged in user",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "431",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "textile_products.rq",
+      "name": "Product overview",
+      "description": "Selected data per product",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "432",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "textile_product_composition.rq",
+      "name": "Product components data",
+      "description": "Selected data of the components of product",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/textile_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "433",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "textile_matter_composition.rq",
+      "name": "Product matter composition",
+      "description": "Matter composition of a product",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/textile_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "434",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "textile_disassembly.rq",
+      "name": "Product disassembly",
+      "description": "Disassembly method of a product and the original input products",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/textile_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "436",
+      "queryGroupId": "evaluation-textile",
+      "queryLocation": "sourceQueries/seeAlso.rq",
+      "name": "Sources in textile network",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/textile_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "440",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "spo.rq",
+      "name": "All accessible data",
+      "description": "All data accessible for the logged in user",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "441",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_products.rq",
+      "name": "Products",
+      "description": "Products with selected details",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "442",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_product_composition.rq",
+      "name": "Product components data",
+      "description": "Selected data of the components of a product",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/construction_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "443",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_matter_composition.rq",
+      "name": "Product matter composition",
+      "description": "Matter composition of a product",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/construction_product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "444",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_buildings.rq",
+      "name": "Buildings",
+      "description": "Overview of buildings",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "445",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_end_of_life.rq",
+      "name": "End of life scenarios",
+      "description": "End of life scenarios for products in buildings",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/construction_building_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "446",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "construction_marketplace.rq",
+      "name": "Marketplace",
+      "description": "Batches for sale in the Marketplace",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "447",
+      "queryGroupId": "evaluation-construction",
+      "queryLocation": "sourceQueries/seeAlso.rq",
+      "name": "Sources in construction network",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css11/construction_user9/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "10000",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_count_spo.rq",
+      "name": "Count",
+      "description": "Gives the count of triples in the indicated datasources - login as texon to explore",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10001",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_spo.rq",
+      "name": "Triples",
+      "description": "Gives at most 50 triples in the indicated datasources - login as texon to explore",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10002",
+      "queryGroupId": "gqx",
+      "queryLocation": "variableQueries/example_s.rq",
+      "name": "Subjects",
+      "description": "Gives at most 50 subjects in the indicated datasources - login as texon to explore",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10003",
+      "queryGroupId": "gqx",
+      "queryLocation": "variableQueries/example_p.rq",
+      "name": "Predicates",
+      "description": "Gives at most 50 predicates in the indicated datasources - login as texon to explore",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10004",
+      "queryGroupId": "gqx",
+      "queryLocation": "variableQueries/example_o.rq",
+      "name": "Objects",
+      "description": "Gives at most 50 objects in the indicated datasources - login as texon to explore",
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10005",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_sxpo.rq",
+      "name": "Triples with subject",
+      "description": "Gives at most 50 triples with a given subject in the indicated datasources - login as texon to explore",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/example_s.rq"]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10006",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_spxo.rq",
+      "name": "Triples with predicate",
+      "description": "Gives at most 50 triples with a given predicate in the indicated datasources - login as texon to explore",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/example_p.rq"]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10007",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_spox.rq",
+      "name": "Triples with object",
+      "description": "Gives at most 50 triples with a given object in the indicated datasources - login as texon to explore",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/example_o.rq"]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "10008",
+      "queryGroupId": "gqx",
+      "queryLocation": "example_terms_of_type.rq",
+      "name": "Terms of type",
+      "description": "Gives at most 50 terms of a given rdf:type in the indicated datasources - login as texon to explore",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/example_types.rq"]
+      },
+      "comunicaContext": {
+        "sources": [
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/components.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/boms.ttl",
+          "https://onto-deside.ilabt.imec.be/css5/texon/data/dt/out/materials.ttl"
+        ],
+        "lenient": true
+      }
+    },
+    {
+      "id": "700",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "spo.rq",
+      "name": "All accessible data",
+      "description": "This query shows all data accessible for the logged in user. This includes also PCDS data and data from the Circularise and the Concular platform.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "701",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-details-per-product.rq",
+      "name": "Product details",
+      "description": "Select a product to see all accessible data about this product and its direct relation to other data points.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "703",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-product_composition.rq",
+      "name": "Product Components",
+      "description": "Select a product to see the components of that product and their mass fraction in the selected product.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-product_with_component_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "704",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-product_matter_composition.rq",
+      "name": "Product Matter Composition",
+      "description": "Select a product to see the matter composition of that product.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-product_with_matter_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "705",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-product_with_matter.rq",
+      "name": "Products Filtered by Matter",
+      "description": "Select a matter to see all products containing this matter.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-matter.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "706" ,
+      "queryGroupId": "cross-domain-evaluation" ,
+      "queryLocation": "x-product_disassembly.rq" ,
+      "name": "Product Disassembly" ,
+      "description": "Select a product to find its disassembly method and the original input products." ,
+      "indirectVariables": {
+        "queryLocations": [
+          "variableQueries/x-product_with_disassembly_method_labels.rq"
+        ]
+      } ,
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index" ,
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "707",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-marketplace.rq",
+      "name": "Marketplace: Batches for Sale",
+      "description": "This query retrieves a selection of data about all batches with an availability date.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "708",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-details-per-batch.rq",
+      "name": "Batch Details",
+      "description": "Select a batch to see all accessible data about this batch and its direct relation to other data points.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-batch_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "709",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-marketplace-matter.rq",
+      "name": "Batch Matter Composition",
+      "description": "This queries retrieve the matter composition of all batches with an availability date.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "710",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-marketplace-filtered.rq",
+      "name": "Batches Filtered by Matter",
+      "description": "Select a matter to see all batches with this matter in their composition.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-matter.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "711",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-marketplace-offers.rq",
+      "name": "Batch Price Offers",
+      "description": "This query retrieves all batch price offers accessible for the logged in user.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "712" ,
+      "queryGroupId": "cross-domain-evaluation" ,
+      "queryLocation": "x-construction_end_of_life.rq" ,
+      "name": "End of Life Scenarios" ,
+      "description": "Select a building to see selected information relevant for decision concerning the end-of-life of products in the selected building." ,
+      "indirectVariables": {
+        "queryLocations": [
+          "variableQueries/x-construction_building_labels.rq"
+        ]
+      } ,
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index" ,
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "713",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-electronics_products.rq",
+      "name": "Overview of Electronics Products",
+      "description": "This queries retrieves selected data points for the electronics products. This data is directly integrated from the Circularise platform.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/circularise/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "714",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-electronics_products-coc.rq",
+      "name": "Chain of Custody",
+      "description": "Select a product to see the products used as input for its production.This data is directly integrated from the Circularise platform.",
+      "indirectVariables": {
+        "queryLocations": ["variableQueries/x-product_labels.rq"]
+      },
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/circularise/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "715" ,
+      "queryGroupId": "cross-domain-evaluation" ,
+      "queryLocation": "x-construction_end_of_life_costs.rq" ,
+      "name": "End of Life Scenarios: Costs and Benefits" ,
+      "description": "This query retrieves selected costs and benefits related to end-of-life scenarios for products. Only the costs and benefits accessible to the logged in user are shown." ,
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index" ,
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    },
+    {
+      "id": "716",
+      "queryGroupId": "cross-domain-evaluation",
+      "queryLocation": "x-marketplace-images.rq",
+      "name": "Batches with Images",
+      "description": "This query retrieves all batches with published images. This data is directly integrated from the Concular platform.",
+      "sourcesIndex": {
+        "url": "https://onto-deside.ilabt.imec.be/css12/ceonadmin/ceon/index",
+        "queryLocation": "sourceQueries/seeAlso.rq"
+      }
+    }
+  ]
+}
