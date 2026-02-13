@@ -10,6 +10,7 @@
 
 <http://w3id.org/PLCO/ontology/processODP> rdf:type owl:Ontology ;
                                             owl:versionIRI <http://w3id.org/PLCO/ontology/processODP/0.1/> ;
+                                            owl:imports <https://liusemweb.github.io/PLCO/modules/time/0.1/ontology.ttl> ;
                                             dcterms:created "2026-02-05" ;
                                             dcterms:creator "Huanyu Li" ;
                                             dcterms:description "A ODP of the PLCO ontology network, defining aspects of the process concept." ;
@@ -78,9 +79,17 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://w3id.org/PLCO/ontology/processODP#duringTime
 :duringTime rdf:type owl:ObjectProperty ;
-            rdfs:range :TimeInterval ;
+            rdfs:range <http://www.w3.org/2006/time#Interval> ;
             rdfs:comment "The time interval during which something, e.g. a process or event, takes place." ;
             rdfs:label "during time" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#followsExecution
+:followsExecution rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :isSettingFor ;
+                  rdfs:domain :PlanExecution ;
+                  rdfs:comment "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled." ;
+                  rdfs:label "follows execution" .
 
 
 ###  http://w3id.org/PLCO/ontology/processODP#hasInput
@@ -97,6 +106,22 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "has output" .
 
 
+###  http://w3id.org/PLCO/ontology/processODP#hasPart
+:hasPart rdf:type owl:ObjectProperty ,
+                  owl:TransitiveProperty ;
+         rdfs:comment "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events." ;
+         rdfs:label "has part" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#hasPlanExecution
+:hasPlanExecution rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Plan ;
+                  rdfs:range :PlanExecution ;
+                  rdfs:comment "A plan can have specific executions." ;
+                  rdfs:label "has plan exeution" .
+
+
 ###  http://w3id.org/PLCO/ontology/processODP#isPerformedOn
 :isPerformedOn rdf:type owl:ObjectProperty ;
                rdfs:domain :Activity ;
@@ -111,13 +136,30 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "is the setting for" .
 
 
+###  http://w3id.org/PLCO/ontology/processODP#precedesExecution
+:precedesExecution rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :isSettingFor ;
+                   rdfs:domain :PlanExecution ;
+                   rdfs:comment "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled." ;
+                   rdfs:label "precedes execution" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#satisfiesPlan
+:satisfiesPlan rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Situation ;
+               rdfs:range :Description ;
+               rdfs:comment "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan." ;
+               rdfs:label "satisfies plan" .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://w3id.org/PLCO/ontology/processODP#endTime
 :endTime rdf:type owl:DatatypeProperty ;
-         rdfs:domain :TimeInterval ;
+         rdfs:domain <http://www.w3.org/2006/time#Interval> ;
          rdfs:range xsd:dateTime ;
          rdfs:comment "Represents the end time of a time interval." ;
          rdfs:label "end time" .
@@ -144,9 +186,17 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "has activity type" .
 
 
+###  http://w3id.org/PLCO/ontology/processODP#occursAtTime
+:occursAtTime rdf:type owl:DatatypeProperty ;
+              rdfs:domain :PlanExecution ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Represents the time at which something takes place." ;
+              rdfs:label "occurs at time" .
+
+
 ###  http://w3id.org/PLCO/ontology/processODP#startTime
 :startTime rdf:type owl:DatatypeProperty ;
-           rdfs:domain :TimeInterval ;
+           rdfs:domain <http://www.w3.org/2006/time#Interval> ;
            rdfs:range xsd:dateTime ;
            rdfs:comment "Represents the start time of a time interval." ;
            rdfs:label "start time" .
@@ -159,6 +209,13 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://w3id.org/PLCO/ontology/processODP#Activity
 :Activity rdf:type owl:Class ;
           rdfs:label "Activity" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#Description
+:Description rdf:type owl:Class ;
+             rdfs:comment """A Description is a SocialObject that represents a conceptualization. 
+For example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters etc. Descriptions 'define' or 'use' concepts, and can be 'satisfied' by situations.""" ;
+             rdfs:label "Description" .
 
 
 ###  http://w3id.org/PLCO/ontology/processODP#Event
@@ -176,6 +233,55 @@ xsd:date rdf:type rdfs:Datatype .
                        ] ;
        rdfs:comment "Something that happens within a given context or (short) timeframe." ;
        rdfs:label "Event" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#Plan
+:Plan rdf:type owl:Class ;
+      rdfs:subClassOf :Description ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasPart ;
+                        owl:someValuesFrom :Plan
+                      ] ;
+      rdfs:comment "A Description having an explicit goal, to be achieved by executing the plan." ;
+      rdfs:label "Plan" .
+
+
+###  http://w3id.org/PLCO/ontology/processODP#PlanExecution
+:PlanExecution rdf:type owl:Class ;
+               rdfs:subClassOf :Situation ,
+                               [ rdf:type owl:Class ;
+                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :duringTime ;
+                                                 owl:someValuesFrom <http://www.w3.org/2006/time#Interval>
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :occursAtTime ;
+                                                 owl:someValuesFrom xsd:dateTime
+                                               ]
+                                             )
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :followsExecution ;
+                                 owl:someValuesFrom :Situation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPart ;
+                                 owl:someValuesFrom :PlanExecution
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :isSettingFor ;
+                                 owl:someValuesFrom :Process
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :precedesExecution ;
+                                 owl:someValuesFrom :Situation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :satisfiesPlan ;
+                                 owl:someValuesFrom :Plan
+                               ] ;
+               rdfs:comment "Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution." ;
+               rdfs:label "Plan Execution" .
 
 
 ###  http://w3id.org/PLCO/ontology/processODP#Process
@@ -203,12 +309,6 @@ xsd:date rdf:type rdfs:Datatype .
                            ] ;
            rdfs:comment "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time." ;
            rdfs:label "Situation" .
-
-
-###  http://w3id.org/PLCO/ontology/processODP#TimeInterval
-:TimeInterval rdf:type owl:Class ;
-              rdfs:comment "A temporal entity has a starting time and an ending time." ;
-              rdfs:label "Time Interval" .
 
 
 ###  http://w3id.org/PLCO/ontology/resourceODP#Resource
