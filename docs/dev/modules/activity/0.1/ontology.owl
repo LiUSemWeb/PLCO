@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/PLCO/ontology/activity#"
+     xml:base="http://w3id.org/PLCO/ontology/activity"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/PLCO/ontology/activity">
+        <owl:versionIRI rdf:resource="http://w3id.org/PLCO/ontology/activity/0.1/"/>
+        <owl:imports rdf:resource="https://liusemweb.github.io/PLCO/modules/processODP/0.1/ontology.ttl"/>
+        <owl:imports rdf:resource="https://liusemweb.github.io/PLCO/modules/time/0.1/ontology.ttl"/>
+        <terms:created>2026-02-05</terms:created>
+        <terms:creator>Huanyu Li</terms:creator>
+        <terms:description>A ODP of the PLCO ontology network, defining aspects of the activity concept.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title>PLCO Ontology Network - Activity Module</terms:title>
+        <vann:preferredNamespacePrefix>plco-activity</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://w3id.org/PLCO/ontology/activity</vann:preferredNamespaceUri>
+        <rdfs:seeAlso rdf:resource="https://github.com/LiUSemWeb/PLCO"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/activity#isPerformedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/PLCO/ontology/activity#isPerformedOn">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/activity#Activity"/>
+        <rdfs:range rdf:resource="http://w3id.org/PLCO/ontology/resourceODP#Resource"/>
+        <rdfs:label>is performed on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/activity#hasActivityDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/activity#hasActivityDate">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/activity#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>had activity date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/activity#hasActivityID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/activity#hasActivityID">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/activity#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has activity ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/activity#hasActivityType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/activity#hasActivityType">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/activity#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has activity type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/activity#Activity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/activity#Activity">
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/resourceODP#Resource -->
+
+
+    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/resourceODP#Resource"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

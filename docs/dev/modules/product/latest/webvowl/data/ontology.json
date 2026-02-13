@@ -367,7 +367,7 @@
   }, {
     "instances" : 0,
     "union" : [ "17", "12" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",

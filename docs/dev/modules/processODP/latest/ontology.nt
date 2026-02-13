@@ -1,5 +1,6 @@
 <http://w3id.org/PLCO/ontology/processODP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/PLCO/ontology/processODP> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/PLCO/ontology/processODP/0.1/> .
+<http://w3id.org/PLCO/ontology/processODP> <http://www.w3.org/2002/07/owl#imports> <https://liusemweb.github.io/PLCO/modules/time/0.1/ontology.ttl> .
 <http://w3id.org/PLCO/ontology/processODP> <http://purl.org/dc/terms/created> "2026-02-05" .
 <http://w3id.org/PLCO/ontology/processODP> <http://purl.org/dc/terms/creator> "Huanyu Li" .
 <http://w3id.org/PLCO/ontology/processODP> <http://purl.org/dc/terms/description> "A ODP of the PLCO ontology network, defining aspects of the process concept." .
@@ -71,9 +72,16 @@
 # 
 # http://w3id.org/PLCO/ontology/processODP#duringTime
 <http://w3id.org/PLCO/ontology/processODP#duringTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/PLCO/ontology/processODP#duringTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/processODP#TimeInterval> .
+<http://w3id.org/PLCO/ontology/processODP#duringTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
 <http://w3id.org/PLCO/ontology/processODP#duringTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time interval during which something, e.g. a process or event, takes place." .
 <http://w3id.org/PLCO/ontology/processODP#duringTime> <http://www.w3.org/2000/01/rdf-schema#label> "during time" .
+# 
+# http://w3id.org/PLCO/ontology/processODP#followsExecution
+<http://w3id.org/PLCO/ontology/processODP#followsExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#followsExecution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/PLCO/ontology/processODP#isSettingFor> .
+<http://w3id.org/PLCO/ontology/processODP#followsExecution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#PlanExecution> .
+<http://w3id.org/PLCO/ontology/processODP#followsExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled." .
+<http://w3id.org/PLCO/ontology/processODP#followsExecution> <http://www.w3.org/2000/01/rdf-schema#label> "follows execution" .
 # 
 # http://w3id.org/PLCO/ontology/processODP#hasInput
 <http://w3id.org/PLCO/ontology/processODP#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -87,6 +95,20 @@
 <http://w3id.org/PLCO/ontology/processODP#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "The output of a process or event." .
 <http://w3id.org/PLCO/ontology/processODP#hasOutput> <http://www.w3.org/2000/01/rdf-schema#label> "has output" .
 # 
+# http://w3id.org/PLCO/ontology/processODP#hasPart
+<http://w3id.org/PLCO/ontology/processODP#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/PLCO/ontology/processODP#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events." .
+<http://w3id.org/PLCO/ontology/processODP#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part" .
+# 
+# http://w3id.org/PLCO/ontology/processODP#hasPlanExecution
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#Plan> .
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/processODP#PlanExecution> .
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "A plan can have specific executions." .
+<http://w3id.org/PLCO/ontology/processODP#hasPlanExecution> <http://www.w3.org/2000/01/rdf-schema#label> "has plan exeution" .
+# 
 # http://w3id.org/PLCO/ontology/processODP#isPerformedOn
 <http://w3id.org/PLCO/ontology/processODP#isPerformedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/PLCO/ontology/processODP#isPerformedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#Activity> .
@@ -99,6 +121,21 @@
 <http://w3id.org/PLCO/ontology/processODP#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state." .
 <http://w3id.org/PLCO/ontology/processODP#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#label> "is the setting for" .
 # 
+# http://w3id.org/PLCO/ontology/processODP#precedesExecution
+<http://w3id.org/PLCO/ontology/processODP#precedesExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#precedesExecution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/PLCO/ontology/processODP#isSettingFor> .
+<http://w3id.org/PLCO/ontology/processODP#precedesExecution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#PlanExecution> .
+<http://w3id.org/PLCO/ontology/processODP#precedesExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled." .
+<http://w3id.org/PLCO/ontology/processODP#precedesExecution> <http://www.w3.org/2000/01/rdf-schema#label> "precedes execution" .
+# 
+# http://w3id.org/PLCO/ontology/processODP#satisfiesPlan
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#Situation> .
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/PLCO/ontology/processODP#Description> .
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan." .
+<http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> <http://www.w3.org/2000/01/rdf-schema#label> "satisfies plan" .
+# 
 # 
 # 
 # #################################################################
@@ -110,7 +147,7 @@
 # 
 # http://w3id.org/PLCO/ontology/processODP#endTime
 <http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#TimeInterval> .
+<http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Interval> .
 <http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the end time of a time interval." .
 <http://w3id.org/PLCO/ontology/processODP#endTime> <http://www.w3.org/2000/01/rdf-schema#label> "end time" .
@@ -133,9 +170,16 @@
 <http://w3id.org/PLCO/ontology/processODP#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://w3id.org/PLCO/ontology/processODP#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#label> "has activity type" .
 # 
+# http://w3id.org/PLCO/ontology/processODP#occursAtTime
+<http://w3id.org/PLCO/ontology/processODP#occursAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/PLCO/ontology/processODP#occursAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#PlanExecution> .
+<http://w3id.org/PLCO/ontology/processODP#occursAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://w3id.org/PLCO/ontology/processODP#occursAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the time at which something takes place." .
+<http://w3id.org/PLCO/ontology/processODP#occursAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "occurs at time" .
+# 
 # http://w3id.org/PLCO/ontology/processODP#startTime
 <http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/PLCO/ontology/processODP#TimeInterval> .
+<http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Interval> .
 <http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the start time of a time interval." .
 <http://w3id.org/PLCO/ontology/processODP#startTime> <http://www.w3.org/2000/01/rdf-schema#label> "start time" .
@@ -152,6 +196,11 @@
 # http://w3id.org/PLCO/ontology/processODP#Activity
 <http://w3id.org/PLCO/ontology/processODP#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/PLCO/ontology/processODP#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+# 
+# http://w3id.org/PLCO/ontology/processODP#Description
+<http://w3id.org/PLCO/ontology/processODP#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/processODP#Description> <http://www.w3.org/2000/01/rdf-schema#comment> "A Description is a SocialObject that represents a conceptualization. \nFor example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters etc. Descriptions 'define' or 'use' concepts, and can be 'satisfied' by situations." .
+<http://w3id.org/PLCO/ontology/processODP#Description> <http://www.w3.org/2000/01/rdf-schema#label> "Description" .
 # 
 # http://w3id.org/PLCO/ontology/processODP#Event
 <http://w3id.org/PLCO/ontology/processODP#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -173,39 +222,85 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <http://w3id.org/PLCO/ontology/processODP#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that happens within a given context or (short) timeframe." .
 <http://w3id.org/PLCO/ontology/processODP#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
 # 
+# http://w3id.org/PLCO/ontology/processODP#Plan
+<http://w3id.org/PLCO/ontology/processODP#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/processODP#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/processODP#Description> .
+<http://w3id.org/PLCO/ontology/processODP#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#Plan> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasPart> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "A Description having an explicit goal, to be achieved by executing the plan." .
+<http://w3id.org/PLCO/ontology/processODP#Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan" .
+# 
+# http://w3id.org/PLCO/ontology/processODP#PlanExecution
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/PLCO/ontology/processODP#Situation> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#occursAtTime> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2006/time#Interval> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#duringTime> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#Situation> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#followsExecution> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#PlanExecution> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasPart> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#Process> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#isSettingFor> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#Situation> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#precedesExecution> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/PLCO/ontology/processODP#Plan> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#satisfiesPlan> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution." .
+<http://w3id.org/PLCO/ontology/processODP#PlanExecution> <http://www.w3.org/2000/01/rdf-schema#label> "Plan Execution" .
+# 
 # http://w3id.org/PLCO/ontology/processODP#Process
 <http://w3id.org/PLCO/ontology/processODP#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/PLCO/ontology/processODP#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid6 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasOutput> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasInput> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/PLCO/ontology/processODP#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasOutput> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#hasInput> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <http://w3id.org/PLCO/ontology/processODP#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Something that takes place over a (longer) period of time and changes some state of affairs."@en .
 <http://w3id.org/PLCO/ontology/processODP#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
 # 
 # http://w3id.org/PLCO/ontology/processODP#Situation
 <http://w3id.org/PLCO/ontology/processODP#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/PLCO/ontology/processODP#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#isSettingFor> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://w3id.org/PLCO/ontology/processODP#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/PLCO/ontology/processODP#isSettingFor> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://w3id.org/PLCO/ontology/processODP#Situation> <http://www.w3.org/2000/01/rdf-schema#comment> "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time." .
 <http://w3id.org/PLCO/ontology/processODP#Situation> <http://www.w3.org/2000/01/rdf-schema#label> "Situation" .
-# 
-# http://w3id.org/PLCO/ontology/processODP#TimeInterval
-<http://w3id.org/PLCO/ontology/processODP#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/PLCO/ontology/processODP#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity has a starting time and an ending time." .
-<http://w3id.org/PLCO/ontology/processODP#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Time Interval" .
 # 
 # http://w3id.org/PLCO/ontology/resourceODP#Resource
 <http://w3id.org/PLCO/ontology/resourceODP#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

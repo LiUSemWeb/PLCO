@@ -1,0 +1,630 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/PLCO/ontology/activity", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/time", "http://w3id.org/PLCO/ontology/resourceODP", "http://w3id.org/PLCO/ontology/processODP", "http://www.w3.org/2006/time" ],
+    "title" : {
+      "undefined" : "PLCO Ontology Network - Activity Module"
+    },
+    "iri" : "http://w3id.org/PLCO/ontology/activity",
+    "version" : "0.1",
+    "author" : [ "Huanyu Li" ],
+    "description" : {
+      "undefined" : "A ODP of the PLCO ontology network, defining aspects of the activity concept."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-02-05",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "plco-activity",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/activity",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "PLCO Ontology Network - Activity Module",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/LiUSemWeb/PLCO",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Situation",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Situation",
+      "undefined" : "Situation"
+    },
+    "comment" : {
+      "undefined" : "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Activity",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#TimeInterval",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeInterval",
+      "undefined" : "Time Interval"
+    },
+    "comment" : {
+      "undefined" : "A temporal entity has a starting time and an ending time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/resourceODP#Resource",
+    "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/activity#Activity",
+    "baseIri" : "http://w3id.org/PLCO/ontology/activity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Event",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "comment" : {
+      "undefined" : "Something that happens within a given context or (short) timeframe."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Process",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process",
+      "undefined" : "Process"
+    },
+    "comment" : {
+      "en" : "Something that takes place over a (longer) period of time and changes some state of affairs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "subClasses" : [ "0", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityDate",
+    "baseIri" : "http://w3id.org/PLCO/ontology/activity",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasActivityDate",
+      "undefined" : "had activity date"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/time#hasTimeStamp",
+    "baseIri" : "http://w3id.org/PLCO/ontology/time",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasTimeStamp"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityType",
+    "baseIri" : "http://w3id.org/PLCO/ontology/activity",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasActivityType",
+      "undefined" : "has activity type"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#duringTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "duringTime",
+      "undefined" : "during time"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The time interval during which something, e.g. a process or event, takes place."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasOutput",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "undefined" : "has output"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The output of a process or event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "startTime",
+      "undefined" : "start time"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Represents the start time of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityID",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasActivityID",
+      "undefined" : "has activity ID"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/activity#isPerformedOn",
+    "baseIri" : "http://w3id.org/PLCO/ontology/activity",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isPerformedOn",
+      "undefined" : "is performed on"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#endTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "endTime",
+      "undefined" : "end time"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Represents the end time of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasInput",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "undefined" : "has input"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The inputs to a process or event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasXSDDuration"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isPerformedOn",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isPerformedOn",
+      "undefined" : "is performed on"
+    },
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "inXSDDateTimeStamp"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasActivityType",
+      "undefined" : "has activity type"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityID",
+    "baseIri" : "http://w3id.org/PLCO/ontology/activity",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasActivityID",
+      "undefined" : "has activity ID"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityDate",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasActivityDate",
+      "undefined" : "had activity date"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "44"
+  } ]
+}
