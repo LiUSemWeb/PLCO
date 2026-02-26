@@ -1,9 +1,0 @@
-PREFIX schema: <http://schema.org/> 
-
-SELECT ?id ?birthDate_int WHERE {
-    ?list schema:name ?listTitle;
-      schema:itemListElement [
-      schema:name ?id;
-      schema:birthDate ?birthDate_int;
-    ].
-}
