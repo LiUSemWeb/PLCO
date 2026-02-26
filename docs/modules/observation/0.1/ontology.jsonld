@@ -1,6 +1,16 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/PLCO/ontology/observation#ObservableProperty"
+    }, {
+      "@id" : "http://w3id.org/PLCO/ontology/observation#ObservationParameter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/PLCO/ontology/observation#ObservableProperty"
   } ],
@@ -8,13 +18,13 @@
     "@list" : [ {
       "@id" : "http://w3id.org/PLCO/ontology/product#StateProperty"
     }, {
-      "@id" : "_:genid5"
+      "@id" : "_:genid8"
     }, {
-      "@id" : "_:genid3"
+      "@id" : "_:genid6"
     } ]
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://w3id.org/PLCO/ontology/observation#Observation"
@@ -23,7 +33,7 @@
     "@id" : "http://w3id.org/PLCO/ontology/observation#isObservedBy"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://w3id.org/PLCO/ontology/observation#isObservedBy"
@@ -125,6 +135,9 @@
 }, {
   "@id" : "http://w3id.org/PLCO/ontology/observation#ObservationParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a property or a characteristic of a feature of interest under observation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Observation Parameter"
   } ]
@@ -133,6 +146,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Observation Value"
+  } ]
+}, {
+  "@id" : "http://w3id.org/PLCO/ontology/observation#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sensor"
   } ]
 }, {
   "@id" : "http://w3id.org/PLCO/ontology/observation#consistsOf",
@@ -183,6 +202,15 @@
     "@id" : "http://w3id.org/PLCO/ontology/observation#ObservationValue"
   } ]
 }, {
+  "@id" : "http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has simple observation result"
+  } ]
+}, {
   "@id" : "http://w3id.org/PLCO/ontology/observation#hasTextualValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -195,6 +223,18 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/observation#ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has value for observable property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/observation#ObservationValue"
+  } ]
+}, {
   "@id" : "http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -205,6 +245,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://w3id.org/PLCO/ontology/observation#ObservationValue"
+  } ]
+}, {
+  "@id" : "http://w3id.org/PLCO/ontology/observation#isMadeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/observation#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is made by sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/observation#Sensor"
   } ]
 }, {
   "@id" : "http://w3id.org/PLCO/ontology/observation#isObservedBy",

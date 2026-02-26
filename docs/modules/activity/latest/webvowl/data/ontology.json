@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/PLCO/ontology/activity", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/time", "http://w3id.org/PLCO/ontology/resourceODP", "http://w3id.org/PLCO/ontology/processODP", "http://www.w3.org/2006/time" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/PLCO/ontology/activity", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/PLCO/ontology/time", "http://w3id.org/PLCO/ontology/resourceODP", "http://w3id.org/PLCO/ontology/processODP", "http://www.w3.org/2006/time" ],
     "title" : {
       "undefined" : "PLCO Ontology Network - Activity Module"
     },
@@ -68,73 +68,85 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "9",
     "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "16",
-    "type" : "owl:Thing"
   }, {
     "id" : "6",
     "type" : "owl:Thing"
   }, {
-    "id" : "27",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "12",
+    "id" : "22",
     "type" : "owl:Thing"
   }, {
-    "id" : "28",
-    "type" : "rdfs:Datatype"
+    "id" : "23",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
   }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "39",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
+    "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "33",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
+    "id" : "41",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "7",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "4",
+    "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
     "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -158,11 +170,40 @@
       "IRI-based" : "Situation",
       "undefined" : "Situation"
     },
+    "subClasses" : [ "13" ],
     "comment" : {
       "undefined" : "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time."
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "23",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#Activity",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
@@ -172,87 +213,88 @@
       "undefined" : "Activity"
     },
     "attributes" : [ "external" ],
-    "id" : "22"
+    "id" : "37"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "20",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#PlanExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
-    }
+      "IRI-based" : "PlanExecution",
+      "undefined" : "Plan Execution"
+    },
+    "comment" : {
+      "undefined" : "Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "9" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "16",
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
     "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "6",
-    "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "dateTimeStamp"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#duration",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "27",
+    "id" : "40",
     "label" : {
       "IRI-based" : "duration"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "12",
+    "id" : "33",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
+    "id" : "29",
     "label" : {
-      "IRI-based" : "dateTimeStamp"
+      "IRI-based" : "dateTime"
     }
-  }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#TimeInterval",
-    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TimeInterval",
-      "undefined" : "Time Interval"
-    },
-    "comment" : {
-      "undefined" : "A temporal entity has a starting time and an ending time."
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "41",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "10",
+    "id" : "7",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
+    "id" : "31",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
+    "id" : "43",
     "label" : {
       "IRI-based" : "date"
     }
@@ -264,20 +306,13 @@
       "IRI-based" : "Resource"
     },
     "attributes" : [ "external" ],
-    "id" : "30"
+    "id" : "45"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "23",
+    "id" : "4",
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
-    "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#Activity",
@@ -289,26 +324,47 @@
     },
     "id" : "3"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
+    "id" : "53",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "4",
+    "id" : "17",
     "label" : {
-      "IRI-based" : "date"
+      "IRI-based" : "string"
     }
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Plan",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plan",
+      "undefined" : "Plan"
+    },
+    "comment" : {
+      "undefined" : "A Description having an explicit goal, to be achieved by executing the plan."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#Description",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Description",
+      "undefined" : "Description"
+    },
+    "subClasses" : [ "15" ],
+    "comment" : {
+      "undefined" : "A Description is a SocialObject that represents a conceptualization. \nFor example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters etc. Descriptions 'define' or 'use' concepts, and can be 'satisfied' by situations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#Event",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
@@ -321,7 +377,7 @@
       "undefined" : "Something that happens within a given context or (short) timeframe."
     },
     "attributes" : [ "external" ],
-    "id" : "42"
+    "id" : "60"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#Process",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
@@ -334,7 +390,7 @@
       "en" : "Something that takes place over a (longer) period of time and changes some state of affairs."
     },
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "27"
   }, {
     "iri" : "http://www.w3.org/2006/time#Instant",
     "baseIri" : "http://www.w3.org/2006/time",
@@ -343,7 +399,7 @@
       "IRI-based" : "Instant"
     },
     "attributes" : [ "external" ],
-    "id" : "25",
+    "id" : "20",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2006/time#TemporalEntity",
@@ -352,7 +408,7 @@
     "label" : {
       "IRI-based" : "TemporalEntity"
     },
-    "subClasses" : [ "0", "25" ],
+    "subClasses" : [ "0", "20" ],
     "attributes" : [ "external" ],
     "id" : "1"
   } ],
@@ -363,56 +419,98 @@
     "id" : "5",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "id" : "8",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "11",
     "type" : "owl:objectProperty"
   }, {
     "id" : "14",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "21",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "24",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
+    "id" : "25",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "32",
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "34",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "39",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "41",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "43",
+    "id" : "36",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "48",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityDate",
@@ -436,195 +534,379 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "5"
   }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "satisfiesPlan",
+      "undefined" : "satisfies plan"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "6",
+    "subproperty" : [ "8", "12" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "10",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityType",
     "baseIri" : "http://w3id.org/PLCO/ontology/activity",
-    "range" : "10",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasActivityType",
       "undefined" : "has activity type"
     },
     "domain" : "3",
     "attributes" : [ "datatype" ],
-    "id" : "9"
+    "id" : "16"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#duringTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "13",
+    "range" : "0",
     "label" : {
       "IRI-based" : "duringTime",
       "undefined" : "during time"
     },
-    "domain" : "12",
+    "domain" : "24",
     "comment" : {
       "undefined" : "The time interval during which something, e.g. a process or event, takes place."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "11"
+    "id" : "25"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasOutput",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "16",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasOutput",
       "undefined" : "has output"
     },
-    "domain" : "15",
+    "domain" : "27",
     "comment" : {
       "undefined" : "The output of a process or event."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "14"
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#occursAtTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "occursAtTime",
+      "undefined" : "occurs at time"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Represents the time at which something takes place."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "28"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "18",
+    "range" : "31",
     "label" : {
       "IRI-based" : "startTime",
       "undefined" : "start time"
     },
-    "domain" : "13",
+    "domain" : "0",
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
     },
     "attributes" : [ "datatype", "external" ],
-    "id" : "17"
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "followsExecution",
+      "undefined" : "follows execution"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "20",
+    "range" : "23",
     "label" : {
       "IRI-based" : "isSettingFor",
       "undefined" : "is the setting for"
     },
-    "domain" : "8",
+    "domain" : "9",
+    "subproperty" : [ "32", "35" ],
     "comment" : {
       "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "19"
+    "id" : "34"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityID",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "23",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasActivityID",
       "undefined" : "has activity ID"
     },
-    "domain" : "22",
+    "domain" : "37",
     "attributes" : [ "datatype", "external" ],
-    "id" : "21"
-  }, {
-    "range" : "1",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "26"
+    "id" : "36"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#isPerformedOn",
     "baseIri" : "http://w3id.org/PLCO/ontology/activity",
-    "range" : "30",
+    "range" : "45",
     "label" : {
       "IRI-based" : "isPerformedOn",
       "undefined" : "is performed on"
     },
     "domain" : "3",
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "precedesExecution",
+      "undefined" : "precedes execution"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "followsExecution",
+      "undefined" : "follows execution"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
+    },
+    "domain" : "13",
+    "subproperty" : [ "32", "35" ],
+    "comment" : {
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "47"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#endTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "33",
+    "range" : "42",
     "label" : {
       "IRI-based" : "endTime",
       "undefined" : "end time"
     },
-    "domain" : "13",
+    "domain" : "0",
     "comment" : {
       "undefined" : "Represents the end time of a time interval."
     },
     "attributes" : [ "datatype", "external" ],
-    "id" : "32"
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "satisfiesPlan",
+      "undefined" : "satisfies plan"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "49"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasInput",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "16",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasInput",
       "undefined" : "has input"
     },
-    "domain" : "15",
+    "domain" : "27",
     "comment" : {
       "undefined" : "The inputs to a process or event."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "34"
+    "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "precedesExecution",
+      "undefined" : "precedes execution"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
+    },
+    "attributes" : [ "external", "someValues", "object" ],
+    "id" : "51"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "27",
+    "range" : "40",
     "label" : {
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "0",
     "attributes" : [ "datatype", "external" ],
-    "id" : "37"
+    "id" : "54"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
+    },
+    "attributes" : [ "transitive", "external", "someValues", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
+    },
+    "attributes" : [ "transitive", "external", "someValues", "object" ],
+    "id" : "56"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isPerformedOn",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "30",
+    "range" : "45",
     "label" : {
       "IRI-based" : "isPerformedOn",
       "undefined" : "is performed on"
     },
-    "domain" : "22",
+    "domain" : "37",
     "attributes" : [ "external", "object" ],
-    "id" : "39"
+    "id" : "57"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
     "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "28",
+    "range" : "39",
     "label" : {
       "IRI-based" : "inXSDDateTimeStamp"
     },
-    "domain" : "25",
+    "domain" : "20",
     "attributes" : [ "datatype", "external" ],
-    "id" : "40"
+    "id" : "58"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "36",
+    "range" : "41",
     "label" : {
       "IRI-based" : "hasActivityType",
       "undefined" : "has activity type"
     },
-    "domain" : "22",
+    "domain" : "37",
     "attributes" : [ "datatype", "external" ],
-    "id" : "41"
+    "id" : "59"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityID",
     "baseIri" : "http://w3id.org/PLCO/ontology/activity",
-    "range" : "31",
+    "range" : "53",
     "label" : {
       "IRI-based" : "hasActivityID",
       "undefined" : "has activity ID"
     },
     "domain" : "3",
     "attributes" : [ "datatype" ],
-    "id" : "43"
+    "id" : "61"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityDate",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "35",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasActivityDate",
       "undefined" : "had activity date"
     },
-    "domain" : "22",
+    "domain" : "37",
     "attributes" : [ "datatype", "external" ],
-    "id" : "44"
+    "id" : "62"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPlanExecution",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasPlanExecution",
+      "undefined" : "has plan exeution"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "A plan can have specific executions."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
   } ]
 }

@@ -634,17 +634,17 @@
     "attributes" : [ "someValues", "object", "transitive" ],
     "id" : "37"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "6",
+    "range" : "21",
     "label" : {
-      "IRI-based" : "followsExecution",
-      "undefined" : "follows execution"
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
     },
-    "superproperty" : [ "29" ],
     "domain" : "10",
+    "subproperty" : [ "27", "30" ],
     "comment" : {
-      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
     "attributes" : [ "someValues", "object" ],
     "id" : "38"
@@ -663,17 +663,17 @@
     "attributes" : [ "datatype" ],
     "id" : "39"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "21",
+    "range" : "17",
     "label" : {
-      "IRI-based" : "isSettingFor",
-      "undefined" : "is the setting for"
+      "IRI-based" : "satisfiesPlan",
+      "undefined" : "satisfies plan"
     },
+    "superproperty" : [ "8" ],
     "domain" : "10",
-    "subproperty" : [ "27", "30" ],
     "comment" : {
-      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
     "attributes" : [ "someValues", "object" ],
     "id" : "41"
@@ -731,17 +731,17 @@
     "attributes" : [ "someValues", "object", "transitive" ],
     "id" : "48"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "17",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "satisfiesPlan",
-      "undefined" : "satisfies plan"
+      "IRI-based" : "followsExecution",
+      "undefined" : "follows execution"
     },
-    "superproperty" : [ "8" ],
+    "superproperty" : [ "29" ],
     "domain" : "10",
     "comment" : {
-      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
     },
     "attributes" : [ "someValues", "object" ],
     "id" : "49"

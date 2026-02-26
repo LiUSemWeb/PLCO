@@ -9,6 +9,7 @@ This section provides details for each class and property defined by PLCO Ontolo
   <li><a href="#ObservationCollection" title="http://w3id.org/PLCO/ontology/observation#ObservationCollection">Observation Collection</a></li>
   <li><a href="#ObservationParameter" title="http://w3id.org/PLCO/ontology/observation#ObservationParameter">Observation Parameter</a></li>
   <li><a href="#ObservationValue" title="http://w3id.org/PLCO/ontology/observation#ObservationValue">Observation Value</a></li>
+  <li><a href="#Sensor" title="http://w3id.org/PLCO/ontology/observation#Sensor">Sensor</a></li>
  </ul>
  <div class="entity" id="FeatureOfInterest">
   <h3>Feature Of Interest<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -30,7 +31,7 @@ This section provides details for each class and property defined by PLCO Ontolo
     is in domain of
    </dt>
    <dd>
-    <a href="#isObservedBy" title="http://w3id.org/PLCO/ontology/observation#isObservedBy">is observed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasSimpleObservationResult" title="http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult">has simple observation result</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValueForObservableProperty" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty">has value for observable property</a> <sup class="type-op" title="object property">op</sup>, <a href="#isObservedBy" title="http://w3id.org/PLCO/ontology/observation#isObservedBy">is observed by</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -48,7 +49,7 @@ This section provides details for each class and property defined by PLCO Ontolo
     is in domain of
    </dt>
    <dd>
-    <a href="#hasObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasObservationParameter">has observation parameter</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasObservationValue" title="http://w3id.org/PLCO/ontology/observation#hasObservationValue">has observation value</a> <sup class="type-op" title="object property">op</sup>, <a href="#observesAt" title="http://w3id.org/PLCO/ontology/observation#observesAt">observes at</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observesDuring" title="http://w3id.org/PLCO/ontology/observation#observesDuring">observes during</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observesOnFeatureOfInterest" title="http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest">observes on feature of interest</a> <sup class="type-op" title="object property">op</sup>, <a href="#observesOnProperty" title="http://w3id.org/PLCO/ontology/observation#observesOnProperty">observes on property</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasObservationParameter">has observation parameter</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasObservationValue" title="http://w3id.org/PLCO/ontology/observation#hasObservationValue">has observation value</a> <sup class="type-op" title="object property">op</sup>, <a href="#isMadeBySensor" title="http://w3id.org/PLCO/ontology/observation#isMadeBySensor">is made by sensor</a> <sup class="type-op" title="object property">op</sup>, <a href="#observesAt" title="http://w3id.org/PLCO/ontology/observation#observesAt">observes at</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observesDuring" title="http://w3id.org/PLCO/ontology/observation#observesDuring">observes during</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#observesOnFeatureOfInterest" title="http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest">observes on feature of interest</a> <sup class="type-op" title="object property">op</sup>, <a href="#observesOnProperty" title="http://w3id.org/PLCO/ontology/observation#observesOnProperty">observes on property</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -73,12 +74,15 @@ This section provides details for each class and property defined by PLCO Ontolo
  <div class="entity" id="ObservationParameter">
   <h3>Observation Parameter<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#ObservationParameter</p>
+  <div class="comment">
+   <span class="markdown">Represents a property or a characteristic of a feature of interest under observation.</span>
+  </div>
   <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasValueForObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter">has value for observation parameter</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasSimpleObservationResult" title="http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult">has simple observation result</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValueForObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter">has value for observation parameter</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -102,7 +106,19 @@ This section provides details for each class and property defined by PLCO Ontolo
     is in range of
    </dt>
    <dd>
-    <a href="#hasObservationValue" title="http://w3id.org/PLCO/ontology/observation#hasObservationValue">has observation value</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasValueForObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter">has value for observation parameter</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasObservationValue" title="http://w3id.org/PLCO/ontology/observation#hasObservationValue">has observation value</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasValueForObservableProperty" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty">has value for observable property</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasValueForObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter">has value for observation parameter</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Sensor">
+  <h3>Sensor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#Sensor</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isMadeBySensor" title="http://w3id.org/PLCO/ontology/observation#isMadeBySensor">is made by sensor</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -112,7 +128,9 @@ This section provides details for each class and property defined by PLCO Ontolo
   <li><a href="#consistsOf" title="http://w3id.org/PLCO/ontology/observation#consistsOf">consists of</a></li>
   <li><a href="#hasObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasObservationParameter">has observation parameter</a></li>
   <li><a href="#hasObservationValue" title="http://w3id.org/PLCO/ontology/observation#hasObservationValue">has observation value</a></li>
+  <li><a href="#hasValueForObservableProperty" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty">has value for observable property</a></li>
   <li><a href="#hasValueForObservationParameter" title="http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter">has value for observation parameter</a></li>
+  <li><a href="#isMadeBySensor" title="http://w3id.org/PLCO/ontology/observation#isMadeBySensor">is made by sensor</a></li>
   <li><a href="#isObservedBy" title="http://w3id.org/PLCO/ontology/observation#isObservedBy">is observed by</a></li>
   <li><a href="#observesOnFeatureOfInterest" title="http://w3id.org/PLCO/ontology/observation#observesOnFeatureOfInterest">observes on feature of interest</a></li>
   <li><a href="#observesOnProperty" title="http://w3id.org/PLCO/ontology/observation#observesOnProperty">observes on property</a></li>
@@ -177,6 +195,26 @@ This section provides details for each class and property defined by PLCO Ontolo
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasValueForObservableProperty">
+  <h3>has value for observable property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ObservableProperty" title="http://w3id.org/PLCO/ontology/observation#ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ObservationValue" title="http://w3id.org/PLCO/ontology/observation#ObservationValue">Observation Value</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasValueForObservationParameter">
   <h3>has value for observation parameter<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter</p>
@@ -193,6 +231,26 @@ This section provides details for each class and property defined by PLCO Ontolo
     </dt>
     <dd>
      <a href="#ObservationValue" title="http://w3id.org/PLCO/ontology/observation#ObservationValue">Observation Value</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isMadeBySensor">
+  <h3>is made by sensor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#isMadeBySensor</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Observation" title="http://w3id.org/PLCO/ontology/observation#Observation">Observation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Sensor" title="http://w3id.org/PLCO/ontology/observation#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -273,6 +331,7 @@ This section provides details for each class and property defined by PLCO Ontolo
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#hasNumericValue" title="http://w3id.org/PLCO/ontology/observation#hasNumericValue">has numeric value</a></li>
+  <li><a href="#hasSimpleObservationResult" title="http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult">has simple observation result</a></li>
   <li><a href="#hasTextualValue" title="http://w3id.org/PLCO/ontology/observation#hasTextualValue">has textual value</a></li>
   <li><a href="#observesAt" title="http://w3id.org/PLCO/ontology/observation#observesAt">observes at</a></li>
   <li><a href="#observesDuring" title="http://w3id.org/PLCO/ontology/observation#observesDuring">observes during</a></li>
@@ -293,6 +352,20 @@ This section provides details for each class and property defined by PLCO Ontolo
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSimpleObservationResult">
+  <h3>has simple observation result<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ObservableProperty" title="http://w3id.org/PLCO/ontology/observation#ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ObservationParameter" title="http://w3id.org/PLCO/ontology/observation#ObservationParameter">Observation Parameter</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
