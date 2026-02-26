@@ -4,10 +4,12 @@ This section provides details for each class and property defined by PLCO Ontolo
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#Activity" title="http://w3id.org/PLCO/ontology/processODP#Activity">Activity</a></li>
+  <li><a href="#Description" title="http://w3id.org/PLCO/ontology/processODP#Description">Description</a></li>
   <li><a href="#Event" title="http://w3id.org/PLCO/ontology/processODP#Event">Event</a></li>
+  <li><a href="#Plan" title="http://w3id.org/PLCO/ontology/processODP#Plan">Plan</a></li>
+  <li><a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a></li>
   <li><a href="#Process" title="http://w3id.org/PLCO/ontology/processODP#Process">Process</a></li>
   <li><a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a></li>
-  <li><a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a></li>
  </ul>
  <div class="entity" id="Activity">
   <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -18,6 +20,27 @@ This section provides details for each class and property defined by PLCO Ontolo
    </dt>
    <dd>
     <a href="#hasActivityDate" title="http://w3id.org/PLCO/ontology/processODP#hasActivityDate">had activity date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivityID" title="http://w3id.org/PLCO/ontology/processODP#hasActivityID">has activity ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivityType" title="http://w3id.org/PLCO/ontology/processODP#hasActivityType">has activity type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isPerformedOn" title="http://w3id.org/PLCO/ontology/processODP#isPerformedOn">is performed on</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Description">
+  <h3>Description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Description</p>
+  <div class="comment">
+   <span class="markdown">A Description is a SocialObject that represents a conceptualization. For example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters etc. Descriptions 'define' or 'use' concepts, and can be 'satisfied' by situations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Plan" title="http://w3id.org/PLCO/ontology/processODP#Plan">Plan</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#satisfiesPlan" title="http://w3id.org/PLCO/ontology/processODP#satisfiesPlan">satisfies plan</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -32,6 +55,54 @@ This section provides details for each class and property defined by PLCO Ontolo
     has super-classes
    </dt>
    <dd></dd>
+  </dl>
+ </div>
+ <div class="entity" id="Plan">
+  <h3>Plan<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#Plan</p>
+  <div class="comment">
+   <span class="markdown">A Description having an explicit goal, to be achieved by executing the plan.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Description" title="http://w3id.org/PLCO/ontology/processODP#Description">Description</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasPlanExecution" title="http://w3id.org/PLCO/ontology/processODP#hasPlanExecution">has plan exeution</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PlanExecution">
+  <h3>Plan Execution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#PlanExecution</p>
+  <div class="comment">
+   <span class="markdown">Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#followsExecution" title="http://w3id.org/PLCO/ontology/processODP#followsExecution">follows execution</a> <sup class="type-op" title="object property">op</sup>, <a href="#occursAtTime" title="http://w3id.org/PLCO/ontology/processODP#occursAtTime">occurs at time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#precedesExecution" title="http://w3id.org/PLCO/ontology/processODP#precedesExecution">precedes execution</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasPlanExecution" title="http://w3id.org/PLCO/ontology/processODP#hasPlanExecution">has plan exeution</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="Process">
@@ -65,31 +136,16 @@ This section provides details for each class and property defined by PLCO Ontolo
    </dt>
    <dd></dd>
    <dt>
-    is in domain of
+    has sub-classes
    </dt>
    <dd>
-    <a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a> <sup class="type-c" title="class">c</sup>
    </dd>
-  </dl>
- </div>
- <div class="entity" id="TimeInterval">
-  <h3>Time Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#TimeInterval</p>
-  <div class="comment">
-   <span class="markdown">A temporal entity has a starting time and an ending time.</span>
-  </div>
-  <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#endTime" title="http://w3id.org/PLCO/ontology/processODP#endTime">end time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startTime" title="http://w3id.org/PLCO/ontology/processODP#startTime">start time</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#duringTime" title="http://w3id.org/PLCO/ontology/processODP#duringTime">during time</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a> <sup class="type-op" title="object property">op</sup>, <a href="#satisfiesPlan" title="http://w3id.org/PLCO/ontology/processODP#satisfiesPlan">satisfies plan</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -97,10 +153,15 @@ This section provides details for each class and property defined by PLCO Ontolo
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#duringTime" title="http://w3id.org/PLCO/ontology/processODP#duringTime">during time</a></li>
+  <li><a href="#followsExecution" title="http://w3id.org/PLCO/ontology/processODP#followsExecution">follows execution</a></li>
   <li><a href="#hasInput" title="http://w3id.org/PLCO/ontology/processODP#hasInput">has input</a></li>
   <li><a href="#hasOutput" title="http://w3id.org/PLCO/ontology/processODP#hasOutput">has output</a></li>
+  <li><a href="#hasPart" title="http://w3id.org/PLCO/ontology/processODP#hasPart">has part</a></li>
+  <li><a href="#hasPlanExecution" title="http://w3id.org/PLCO/ontology/processODP#hasPlanExecution">has plan exeution</a></li>
   <li><a href="#isPerformedOn" title="http://w3id.org/PLCO/ontology/processODP#isPerformedOn">is performed on</a></li>
   <li><a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a></li>
+  <li><a href="#precedesExecution" title="http://w3id.org/PLCO/ontology/processODP#precedesExecution">precedes execution</a></li>
+  <li><a href="#satisfiesPlan" title="http://w3id.org/PLCO/ontology/processODP#satisfiesPlan">satisfies plan</a></li>
  </ul>
  <div class="entity" id="duringTime">
   <h3>during time<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -114,7 +175,30 @@ This section provides details for each class and property defined by PLCO Ontolo
      has range
     </dt>
     <dd>
-     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+     <a href="http://www.w3.org/2006/time#Interval" target="_blank" title="http://www.w3.org/2006/time#Interval">Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="followsExecution">
+  <h3>follows execution<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#followsExecution</p>
+  <div class="comment">
+   <span class="markdown">The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -153,6 +237,42 @@ This section provides details for each class and property defined by PLCO Ontolo
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasPart">
+  <h3>has part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasPart</p>
+  <div class="comment">
+   <span class="markdown">A process or event can consist of several parts, which are sub-processes (e.g. steps) or events.</span>
+  </div>
+ </div>
+ <div class="entity" id="hasPlanExecution">
+  <h3>has plan exeution<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#hasPlanExecution</p>
+  <div class="comment">
+   <span class="markdown">A plan can have specific executions.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Plan" title="http://w3id.org/PLCO/ontology/processODP#Plan">Plan</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="isPerformedOn">
   <h3>is performed on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#isPerformedOn</p>
@@ -182,10 +302,68 @@ This section provides details for each class and property defined by PLCO Ontolo
   <div class="description">
    <dl>
     <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#followsExecution" title="http://w3id.org/PLCO/ontology/processODP#followsExecution">follows execution</a> <sup class="type-op" title="object property">op</sup>, <a href="#precedesExecution" title="http://w3id.org/PLCO/ontology/processODP#precedesExecution">precedes execution</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
      has domain
     </dt>
     <dd>
      <a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="precedesExecution">
+  <h3>precedes execution<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#precedesExecution</p>
+  <div class="comment">
+   <span class="markdown">The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isSettingFor" title="http://w3id.org/PLCO/ontology/processODP#isSettingFor">is the setting for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="satisfiesPlan">
+  <h3>satisfies plan<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#satisfiesPlan</p>
+  <div class="comment">
+   <span class="markdown">A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Situation" title="http://w3id.org/PLCO/ontology/processODP#Situation">Situation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Description" title="http://w3id.org/PLCO/ontology/processODP#Description">Description</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -197,6 +375,7 @@ This section provides details for each class and property defined by PLCO Ontolo
   <li><a href="#hasActivityDate" title="http://w3id.org/PLCO/ontology/processODP#hasActivityDate">had activity date</a></li>
   <li><a href="#hasActivityID" title="http://w3id.org/PLCO/ontology/processODP#hasActivityID">has activity ID</a></li>
   <li><a href="#hasActivityType" title="http://w3id.org/PLCO/ontology/processODP#hasActivityType">has activity type</a></li>
+  <li><a href="#occursAtTime" title="http://w3id.org/PLCO/ontology/processODP#occursAtTime">occurs at time</a></li>
   <li><a href="#startTime" title="http://w3id.org/PLCO/ontology/processODP#startTime">start time</a></li>
  </ul>
  <div class="entity" id="endTime">
@@ -211,7 +390,7 @@ This section provides details for each class and property defined by PLCO Ontolo
      has domain
     </dt>
     <dd>
-     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+     <a href="http://www.w3.org/2006/time#Interval" target="_blank" title="http://www.w3.org/2006/time#Interval">Interval</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -282,6 +461,29 @@ This section provides details for each class and property defined by PLCO Ontolo
    </dl>
   </div>
  </div>
+ <div class="entity" id="occursAtTime">
+  <h3>occurs at time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#occursAtTime</p>
+  <div class="comment">
+   <span class="markdown">Represents the time at which something takes place.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PlanExecution" title="http://w3id.org/PLCO/ontology/processODP#PlanExecution">Plan Execution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="startTime">
   <h3>start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/PLCO/ontology/processODP#startTime</p>
@@ -294,7 +496,7 @@ This section provides details for each class and property defined by PLCO Ontolo
      has domain
     </dt>
     <dd>
-     <a href="#TimeInterval" title="http://w3id.org/PLCO/ontology/processODP#TimeInterval">Time Interval</a> <sup class="type-c" title="class">c</sup>
+     <a href="http://www.w3.org/2006/time#Interval" target="_blank" title="http://www.w3.org/2006/time#Interval">Interval</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
