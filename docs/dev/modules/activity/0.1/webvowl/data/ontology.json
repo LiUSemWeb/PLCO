@@ -37,16 +37,16 @@
         "value" : "plco-activity",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/activity",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/activity",
         "type" : "label"
       } ],
       "title" : [ {
@@ -433,7 +433,7 @@
       "IRI-based" : "hasTimeStamp"
     },
     "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "5"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityType",
@@ -458,7 +458,7 @@
     "comment" : {
       "undefined" : "The time interval during which something, e.g. a process or event, takes place."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "11"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasOutput",
@@ -472,7 +472,7 @@
     "comment" : {
       "undefined" : "The output of a process or event."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "14"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
@@ -486,7 +486,7 @@
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
@@ -500,7 +500,7 @@
     "comment" : {
       "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityID",
@@ -511,7 +511,7 @@
       "undefined" : "has activity ID"
     },
     "domain" : "22",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "21"
   }, {
     "range" : "1",
@@ -546,7 +546,7 @@
     "comment" : {
       "undefined" : "Represents the end time of a time interval."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "32"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasInput",
@@ -560,7 +560,7 @@
     "comment" : {
       "undefined" : "The inputs to a process or event."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "34"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
@@ -570,7 +570,7 @@
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "0",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "37"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isPerformedOn",
@@ -581,7 +581,7 @@
       "undefined" : "is performed on"
     },
     "domain" : "22",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
@@ -591,7 +591,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "25",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "40"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",
@@ -602,7 +602,7 @@
       "undefined" : "has activity type"
     },
     "domain" : "22",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "41"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/activity#hasActivityID",
@@ -624,7 +624,7 @@
       "undefined" : "had activity date"
     },
     "domain" : "22",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "44"
   } ]
 }

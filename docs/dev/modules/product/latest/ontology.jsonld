@@ -127,6 +127,12 @@
     "@id" : "http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty"
   } ]
 }, {
+  "@id" : "http://w3id.org/PLCO/ontology/product#StatePropertyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Property Value"
+  } ]
+}, {
   "@id" : "http://w3id.org/PLCO/ontology/product#describes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -229,13 +235,25 @@
     "@id" : "http://w3id.org/PLCO/ontology/product#StateProperty"
   } ]
 }, {
-  "@id" : "http://w3id.org/PLCO/ontology/product#hasStatePropertyValue",
+  "@id" : "http://w3id.org/PLCO/ontology/product#hasStatePropertySimpleValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://w3id.org/PLCO/ontology/product#StateProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has state property value"
+    "@value" : "has state property simple value"
+  } ]
+}, {
+  "@id" : "http://w3id.org/PLCO/ontology/product#hasValueForStateProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/product#StateProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has value for state property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/product#StatePropertyValue"
   } ]
 }, {
   "@id" : "http://w3id.org/PLCO/ontology/product#hasVersionNumber",

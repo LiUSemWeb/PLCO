@@ -37,16 +37,16 @@
         "value" : "plco-resourceODP",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/resourceODP",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/resourceODP",
         "type" : "label"
       } ],
       "title" : [ {
@@ -276,12 +276,12 @@
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "3"
   }, {
     "range" : "5",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isRealizationOf",
@@ -300,7 +300,7 @@
   }, {
     "range" : "1",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isAbout",
@@ -319,7 +319,7 @@
   }, {
     "range" : "1",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition",

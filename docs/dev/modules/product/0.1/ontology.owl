@@ -181,6 +181,17 @@
     
 
 
+    <!-- http://w3id.org/PLCO/ontology/product#hasValueForStateProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/PLCO/ontology/product#hasValueForStateProperty">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/product#StateProperty"/>
+        <rdfs:range rdf:resource="http://w3id.org/PLCO/ontology/product#StatePropertyValue"/>
+        <rdfs:label>has value for state property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/PLCO/ontology/product#isModelledBy -->
 
 
@@ -290,12 +301,12 @@
     
 
 
-    <!-- http://w3id.org/PLCO/ontology/product#hasStatePropertyValue -->
+    <!-- http://w3id.org/PLCO/ontology/product#hasStatePropertySimpleValue -->
 
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/product#hasStatePropertyValue">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/PLCO/ontology/product#hasStatePropertySimpleValue">
         <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/product#StateProperty"/>
-        <rdfs:label>has state property value</rdfs:label>
+        <rdfs:label>has state property simple value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -377,6 +388,15 @@
     <owl:Class rdf:about="http://w3id.org/PLCO/ontology/product#StateProperty">
         <rdfs:subClassOf rdf:resource="http://w3id.org/PLCO/ontology/resourceODP#ResourceProperty"/>
         <rdfs:label>State Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/PLCO/ontology/product#StatePropertyValue -->
+
+
+    <owl:Class rdf:about="http://w3id.org/PLCO/ontology/product#StatePropertyValue">
+        <rdfs:label>State Property Value</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

@@ -373,17 +373,17 @@
       "IRI-based" : "hasTimeStamp"
     },
     "domain" : "17",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "19"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "20"
   }, {
     "range" : "4",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
@@ -393,7 +393,7 @@
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "3",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "23"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesDuring",
@@ -425,7 +425,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "22",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "28"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesOnProperty",
