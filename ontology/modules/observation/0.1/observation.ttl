@@ -91,11 +91,25 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                      rdfs:label "has observation value" .
 
 
+###  http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty
+:hasValueForObservableProperty rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ObservableProperty ;
+                               rdfs:range :ObservationValue ;
+                               rdfs:label "has value for observable property" .
+
+
 ###  http://w3id.org/PLCO/ontology/observation#hasValueForObservationParameter
 :hasValueForObservationParameter rdf:type owl:ObjectProperty ;
                                  rdfs:domain :ObservationParameter ;
                                  rdfs:range :ObservationValue ;
                                  rdfs:label "has value for observation parameter" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#isMadeBySensor
+:isMadeBySensor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Observation ;
+                rdfs:range :Sensor ;
+                rdfs:label "is made by sensor" .
 
 
 ###  http://w3id.org/PLCO/ontology/observation#isObservedBy
@@ -129,6 +143,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                  rdfs:domain :ObservationValue ;
                  rdfs:range xsd:double ;
                  rdfs:label "has numeric value" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult
+:hasSimpleObservationResult rdf:type owl:DatatypeProperty ;
+                            rdfs:domain [ rdf:type owl:Class ;
+                                          owl:unionOf ( :ObservableProperty
+                                                        :ObservationParameter
+                                                      )
+                                        ] ;
+                            rdfs:label "has simple observation result" .
 
 
 ###  http://w3id.org/PLCO/ontology/observation#hasTextualValue
@@ -179,12 +203,18 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  http://w3id.org/PLCO/ontology/observation#ObservationParameter
 :ObservationParameter rdf:type owl:Class ;
+                      rdfs:comment "Represents a property or a characteristic of a feature of interest under observation." ;
                       rdfs:label "Observation Parameter" .
 
 
 ###  http://w3id.org/PLCO/ontology/observation#ObservationValue
 :ObservationValue rdf:type owl:Class ;
                   rdfs:label "Observation Value" .
+
+
+###  http://w3id.org/PLCO/ontology/observation#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:label "Sensor" .
 
 
 ###  http://w3id.org/PLCO/ontology/product#StateProperty
