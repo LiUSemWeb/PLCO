@@ -214,6 +214,16 @@
     
 
 
+    <!-- http://w3id.org/PLCO/ontology/product#stateOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/PLCO/ontology/product#stateOf">
+        <rdfs:domain rdf:resource="http://w3id.org/PLCO/ontology/product#StateProperty"/>
+        <rdfs:range rdf:resource="http://w3id.org/PLCO/ontology/product#ProductItem"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

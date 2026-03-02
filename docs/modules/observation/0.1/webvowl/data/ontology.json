@@ -37,16 +37,16 @@
         "value" : "plco-observation",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/PLCO/ontology/observation",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -222,7 +222,7 @@
   }, {
     "instances" : 0,
     "union" : [ "16", "12" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#StateProperty",
@@ -426,7 +426,7 @@
       "IRI-based" : "hasTimeStamp"
     },
     "domain" : "22",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "21"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasValueForObservableProperty",
@@ -447,7 +447,7 @@
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "3",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "25"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesDuring",
@@ -479,7 +479,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "31",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "30"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#hasSimpleObservationResult",
@@ -539,7 +539,7 @@
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/observation#observesAt",
@@ -555,7 +555,7 @@
   }, {
     "range" : "4",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   } ]
 }

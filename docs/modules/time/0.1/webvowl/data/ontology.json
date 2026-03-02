@@ -169,7 +169,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "range" : "4",
@@ -199,7 +199,7 @@
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "3",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "10"
   } ]
 }

@@ -122,6 +122,12 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "is stored at" .
 
 
+###  http://w3id.org/PLCO/ontology/product#stateOf
+:stateOf rdf:type owl:ObjectProperty ;
+         rdfs:domain :StateProperty ;
+         rdfs:range :ProductItem .
+
+
 #################################################################
 #    Data properties
 #################################################################

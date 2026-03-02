@@ -98,7 +98,7 @@
     "id" : "33",
     "type" : "owl:Thing"
   }, {
-    "id" : "29",
+    "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "41",
@@ -107,7 +107,7 @@
     "id" : "7",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "31",
+    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "42",
@@ -252,7 +252,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
+    "id" : "31",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -273,7 +273,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "29",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -619,23 +619,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "26"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#occursAtTime",
-    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "29",
-    "label" : {
-      "IRI-based" : "occursAtTime",
-      "undefined" : "occurs at time"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "Represents the time at which something takes place."
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "28"
-  }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "31",
+    "range" : "29",
     "label" : {
       "IRI-based" : "startTime",
       "undefined" : "start time"
@@ -643,6 +629,20 @@
     "domain" : "0",
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#occursAtTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "occursAtTime",
+      "undefined" : "occurs at time"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Represents the time at which something takes place."
     },
     "attributes" : [ "datatype", "external" ],
     "id" : "30"
@@ -726,22 +726,22 @@
     "comment" : {
       "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "46"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "27",
+    "range" : "15",
     "label" : {
-      "IRI-based" : "isSettingFor",
-      "undefined" : "is the setting for"
+      "IRI-based" : "satisfiesPlan",
+      "undefined" : "satisfies plan"
     },
+    "superproperty" : [ "11" ],
     "domain" : "13",
-    "subproperty" : [ "32", "35" ],
     "comment" : {
-      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "47"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#endTime",
@@ -758,19 +758,18 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "48"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "15",
+    "range" : "13",
     "label" : {
-      "IRI-based" : "satisfiesPlan",
-      "undefined" : "satisfies plan"
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
     },
-    "superproperty" : [ "11" ],
     "domain" : "13",
     "comment" : {
-      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "transitive", "external", "object", "someValues" ],
     "id" : "49"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasInput",
@@ -799,7 +798,7 @@
     "comment" : {
       "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "51"
   }, {
     "iri" : "http://www.w3.org/2006/time#hasXSDDuration",
@@ -823,21 +822,22 @@
     "comment" : {
       "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
     },
-    "attributes" : [ "transitive", "external", "someValues", "object" ],
+    "attributes" : [ "transitive", "external", "object", "someValues" ],
     "id" : "55"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "13",
+    "range" : "27",
     "label" : {
-      "IRI-based" : "hasPart",
-      "undefined" : "has part"
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
     },
     "domain" : "13",
+    "subproperty" : [ "32", "35" ],
     "comment" : {
-      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
-    "attributes" : [ "transitive", "external", "someValues", "object" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "56"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isPerformedOn",

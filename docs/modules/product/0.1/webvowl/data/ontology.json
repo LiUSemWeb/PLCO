@@ -37,16 +37,16 @@
         "value" : "plco-product",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/product",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/product",
         "type" : "label"
       } ],
       "title" : [ {
@@ -370,7 +370,7 @@
   }, {
     "instances" : 0,
     "union" : [ "19", "12" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -509,12 +509,15 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "54",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -553,7 +556,7 @@
   }, {
     "range" : "18",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasApplianceType",
@@ -600,37 +603,37 @@
     "comment" : {
       "undefined" : "hasPhysicalObject intends to represent that a batch of objects or a set of objects can have composing components of physical objects."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "27"
   }, {
     "range" : "11",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "11",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "10",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "11",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasVersionNumber",
@@ -646,7 +649,7 @@
   }, {
     "range" : "9",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#isModelledBy",
@@ -662,7 +665,7 @@
   }, {
     "range" : "6",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hadDesignDescription",
@@ -698,7 +701,7 @@
     "comment" : {
       "undefined" : "A resource can has specifc properties."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "44"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasStateProperty",
@@ -723,7 +726,7 @@
     "comment" : {
       "undefined" : "Relates a thing, e.g. a digital object, or a physical object, to the information it is a realization of. C.f. a physical book that is the realization of a novel, or a pdf or Excel-file that is a realization of a certain data sheet."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "47"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#isAbout",
@@ -737,8 +740,18 @@
     "comment" : {
       "undefined" : "Connecting the information to the object (physical, virtual, imaginary) that the information is about."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#stateOf",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "stateOf"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "51"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
@@ -751,8 +764,8 @@
     "comment" : {
       "undefined" : "A resource can has specifc conditions."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "51"
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
@@ -765,8 +778,8 @@
     "comment" : {
       "undefined" : "A resource can has specifc qualities."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "52"
+    "attributes" : [ "external", "object" ],
+    "id" : "53"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasDesignID",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -777,7 +790,7 @@
     },
     "domain" : "4",
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "54"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasFileName",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -788,7 +801,7 @@
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "54"
+    "id" : "55"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasBrand",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -799,6 +812,6 @@
     },
     "domain" : "12",
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "56"
   } ]
 }
