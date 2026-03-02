@@ -104,10 +104,10 @@
     "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "26",
+    "id" : "24",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "26",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "44",
@@ -251,14 +251,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "24",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
+    "id" : "26",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -459,7 +459,7 @@
       "IRI-based" : "hasTimeStamp"
     },
     "domain" : "3",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "2"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
@@ -536,23 +536,9 @@
     "attributes" : [ "object" ],
     "id" : "20"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#occursAtTime",
-    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "occursAtTime",
-      "undefined" : "occurs at time"
-    },
-    "domain" : "10",
-    "comment" : {
-      "undefined" : "Represents the time at which something takes place."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "23"
-  }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#startTime",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "26",
+    "range" : "24",
     "label" : {
       "IRI-based" : "startTime",
       "undefined" : "start time"
@@ -560,6 +546,20 @@
     "domain" : "0",
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#occursAtTime",
+    "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "occursAtTime",
+      "undefined" : "occurs at time"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Represents the time at which something takes place."
     },
     "attributes" : [ "datatype" ],
     "id" : "25"
@@ -635,18 +635,19 @@
     "attributes" : [ "someValues", "object" ],
     "id" : "37"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "10",
+    "range" : "17",
     "label" : {
-      "IRI-based" : "hasPart",
-      "undefined" : "has part"
+      "IRI-based" : "satisfiesPlan",
+      "undefined" : "satisfies plan"
     },
+    "superproperty" : [ "8" ],
     "domain" : "10",
     "comment" : {
-      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
-    "attributes" : [ "someValues", "object", "transitive" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "38"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#endTime",
@@ -692,17 +693,17 @@
     "attributes" : [ "object" ],
     "id" : "42"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#satisfiesPlan",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "17",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "satisfiesPlan",
-      "undefined" : "satisfies plan"
+      "IRI-based" : "precedesExecution",
+      "undefined" : "precedes execution"
     },
-    "superproperty" : [ "8" ],
+    "superproperty" : [ "29" ],
     "domain" : "10",
     "comment" : {
-      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
     },
     "attributes" : [ "someValues", "object" ],
     "id" : "43"
@@ -714,7 +715,7 @@
       "IRI-based" : "hasXSDDuration"
     },
     "domain" : "0",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "47"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
@@ -731,19 +732,18 @@
     "attributes" : [ "someValues", "object", "transitive" ],
     "id" : "48"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "6",
+    "range" : "10",
     "label" : {
-      "IRI-based" : "precedesExecution",
-      "undefined" : "precedes execution"
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
     },
-    "superproperty" : [ "29" ],
     "domain" : "10",
     "comment" : {
-      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
+      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "transitive" ],
     "id" : "49"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#isPerformedOn",
@@ -764,7 +764,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "12",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "51"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasActivityType",

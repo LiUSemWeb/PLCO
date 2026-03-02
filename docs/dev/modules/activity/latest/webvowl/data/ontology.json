@@ -714,34 +714,33 @@
     "attributes" : [ "object", "external" ],
     "id" : "35"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
     "range" : "9",
     "label" : {
-      "IRI-based" : "precedesExecution",
-      "undefined" : "precedes execution"
+      "IRI-based" : "followsExecution",
+      "undefined" : "follows execution"
     },
     "superproperty" : [ "34" ],
     "domain" : "13",
     "comment" : {
-      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
+      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
     },
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "46"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "27",
+    "range" : "13",
     "label" : {
-      "IRI-based" : "isSettingFor",
-      "undefined" : "is the setting for"
+      "IRI-based" : "hasPart",
+      "undefined" : "has part"
     },
     "domain" : "13",
-    "subproperty" : [ "32", "35" ],
     "comment" : {
-      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "object", "transitive", "external", "someValues" ],
     "id" : "47"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#endTime",
@@ -758,18 +757,19 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "48"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#hasPart",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#precedesExecution",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "13",
+    "range" : "9",
     "label" : {
-      "IRI-based" : "hasPart",
-      "undefined" : "has part"
+      "IRI-based" : "precedesExecution",
+      "undefined" : "precedes execution"
     },
+    "superproperty" : [ "34" ],
     "domain" : "13",
     "comment" : {
-      "undefined" : "A process or event can consist of several parts, which are sub-processes (e.g. steps) or events."
+      "undefined" : "The situation before the process event takes place, i.e. the state of affairs before the execution, such as the state of the set of components before they are assembled into a product item, or the material state before being recycled."
     },
-    "attributes" : [ "object", "transitive", "external", "someValues" ],
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "49"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/processODP#hasInput",
@@ -786,17 +786,17 @@
     "attributes" : [ "object", "external" ],
     "id" : "50"
   }, {
-    "iri" : "http://w3id.org/PLCO/ontology/processODP#followsExecution",
+    "iri" : "http://w3id.org/PLCO/ontology/processODP#isSettingFor",
     "baseIri" : "http://w3id.org/PLCO/ontology/processODP",
-    "range" : "9",
+    "range" : "27",
     "label" : {
-      "IRI-based" : "followsExecution",
-      "undefined" : "follows execution"
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
     },
-    "superproperty" : [ "34" ],
     "domain" : "13",
+    "subproperty" : [ "32", "35" ],
     "comment" : {
-      "undefined" : "The situation after the execution takes place, i.e. the state of affairs after the process event, such as the product being assembled, or the material being recycled."
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "51"

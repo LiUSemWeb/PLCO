@@ -292,6 +292,15 @@
     "@id" : "http://w3id.org/PLCO/ontology/location#Location"
   } ]
 }, {
+  "@id" : "http://w3id.org/PLCO/ontology/product#stateOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/product#StateProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/PLCO/ontology/product#ProductItem"
+  } ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {

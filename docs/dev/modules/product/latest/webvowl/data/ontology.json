@@ -37,16 +37,16 @@
         "value" : "plco-product",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/PLCO/ontology/product",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/PLCO/ontology/product",
         "type" : "label"
       } ],
       "title" : [ {
@@ -370,7 +370,7 @@
   }, {
     "instances" : 0,
     "union" : [ "19", "12" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -509,12 +509,15 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "54",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -553,7 +556,7 @@
   }, {
     "range" : "18",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasApplianceType",
@@ -605,32 +608,32 @@
   }, {
     "range" : "11",
     "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
     "range" : "11",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
     "range" : "11",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "32"
   }, {
     "range" : "10",
     "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "33"
   }, {
     "range" : "11",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasVersionNumber",
@@ -646,7 +649,7 @@
   }, {
     "range" : "9",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#isModelledBy",
@@ -662,7 +665,7 @@
   }, {
     "range" : "6",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hadDesignDescription",
@@ -740,6 +743,16 @@
     "attributes" : [ "external", "object" ],
     "id" : "50"
   }, {
+    "iri" : "http://w3id.org/PLCO/ontology/product#stateOf",
+    "baseIri" : "http://w3id.org/PLCO/ontology/product",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "stateOf"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceCondition",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
     "range" : "16",
@@ -752,7 +765,7 @@
       "undefined" : "A resource can has specifc conditions."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "51"
+    "id" : "52"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/resourceODP#hasResourceQuality",
     "baseIri" : "http://w3id.org/PLCO/ontology/resourceODP",
@@ -766,7 +779,7 @@
       "undefined" : "A resource can has specifc qualities."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "52"
+    "id" : "53"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasDesignID",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -777,7 +790,7 @@
     },
     "domain" : "4",
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "54"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasFileName",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -788,7 +801,7 @@
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "54"
+    "id" : "55"
   }, {
     "iri" : "http://w3id.org/PLCO/ontology/product#hasBrand",
     "baseIri" : "http://w3id.org/PLCO/ontology/product",
@@ -799,6 +812,6 @@
     },
     "domain" : "12",
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "56"
   } ]
 }

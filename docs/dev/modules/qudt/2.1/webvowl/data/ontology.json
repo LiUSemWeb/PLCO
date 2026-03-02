@@ -331,25 +331,6 @@
     "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
-    "iri" : "http://qudt.org/schema/qudt/quantityValue",
-    "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "13",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/2.1/schema/qudt",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "quantityValue",
-      "undefined" : "quantity value"
-    },
-    "domain" : "0",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "14"
-  }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
     "baseIri" : "http://qudt.org/schema/qudt",
     "range" : "3",
@@ -365,6 +346,25 @@
       "IRI-based" : "hasQuantityKind",
       "en" : "has quantity kind",
       "undefined" : "has quantity kind"
+    },
+    "domain" : "0",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/quantityValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/2.1/schema/qudt",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "quantityValue",
+      "undefined" : "quantity value"
     },
     "domain" : "0",
     "attributes" : [ "object", "external", "allValues" ],
